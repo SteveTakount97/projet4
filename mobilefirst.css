@@ -1,0 +1,220 @@
+@media screen and (max-width: 480px) {
+  header {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-rows: 63px 50px;
+    margin-left: 0;
+    width: 375px;
+    height: 113px;
+  }
+  .div_image_head {
+    margin-left: 0;
+  }
+  .image_head {
+    width: 197px;
+    height: 36px;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+  }
+  .imageM {
+    width: 340px;
+    height: 251px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .image_Nouveau {
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    float: right;
+    position: absolute;
+    top: auto;
+    right: 40px;
+    margin-top: 10px;
+  }
+  .position_head {
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .position_head .image_position {
+    width: 12px;
+    height: 16px;
+    float: left;
+  }
+  .position_head .champ {
+    padding: auto;
+    font-weight: 100px;
+    border: none;
+    background-color: #EAEAEA;
+  }
+  .container_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titre_one {
+    width: 275px;
+    height: 68px;
+    font-family: "robot", sans-serif;
+    size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    position: relative;
+    top: 12px;
+    left: 42px;
+  }
+  .titre_two {
+    width: 315px;
+    height: 46px;
+    position: relative;
+    top: 40px;
+    left: 34px;
+    text-align: center;
+    line-height: 21.09px;
+    font-family: "robot", sans-serif;
+    size: 18px;
+    font-weight: 300;
+    color: #353535;
+  }
+  .titre_tree {
+    width: 218px;
+    height: 40px;
+    font-family: "robot", sans-serif;
+    text-align: center;
+    position: relative;
+    size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    top: 80px;
+    left: 74px;
+  }
+  .button {
+    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    border-radius: 35px;
+    border: 1px #FF79DA solid;
+    color: white;
+    padding-top: 15px;
+  }
+  body {
+    background-color: rgb(247, 248, 248);
+    width: 375px;
+    margin-left: 17px;
+    overflow-y: auto;
+  }
+  .menu_one {
+    margin-top: 150px;
+    width: 375px;
+    height: 440px;
+    background-color: #FFFFFF;
+  }
+  .menu_titre {
+    width: 275px;
+    height: 31px;
+    font-family: "robot", sans-serif;
+    size: 24px;
+    line-height: 28.13px;
+    margin-left: 20px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .cmenu {
+    border: 1px #F6F6F6 solid;
+    width: 335px;
+    height: 72.38px;
+    border-radius: 20px;
+    margin-left: 20px;
+    background-color: #F6F6F6;
+  }
+  .menu {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  .menu_titre_one {
+    text-align: center;
+  }
+  .image_menu {
+    float: left;
+    margin-left: 40px;
+    padding-top: 20px;
+  }
+  .image_menu .image_m {
+    width: 13.02px;
+    height: 19.9px;
+    opacity: 0px;
+  }
+  .image_menu .image_mi {
+    width: 16px;
+    height: 15.92px;
+  }
+  .image_menu .image_mo {
+    Width: 18px;
+    Height: 17.91px;
+  }
+  .image_me {
+    float: left;
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+  .image_num {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+  }
+  aside {
+    font-family: "robot", sans-serif;
+    font-weight: 300;
+    size: 17px;
+    line-height: 19.9px;
+    color: #000000;
+    width: 247px;
+    height: 24px;
+  }
+  .image_foot {
+    width: 137, 58px;
+    height: 27px;
+    font-style: italic;
+    size: 18px;
+    line-height: 26, 24px;
+    filter: brightness(0) invert(1) hue-rotate(180deg);
+    margin-top: 2px;
+  }
+  .pasdepage_c {
+    background-color: #353535;
+    width: 375px;
+    height: 186px;
+    display: grid;
+    gap: 16px;
+    color: white;
+  }
+  .art_food {
+    width: 190px;
+    height: 99px;
+    display: grid;
+    gap: 7px;
+  }
+  .image_like {
+    width: 22px;
+    height: 21px;
+    float: right;
+    margin-right: 70px;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.9 ease;
+  }
+  .image_like:hover {
+    filter: hue-rotate(270deg);
+  }
+  dt {
+    margin-top: 5px;
+  }
+  .smenu .pasdepage_c {
+    display: grid;
+    gap: 18px;
+    margin-left: 40px;
+  }
+}/*# sourceMappingURL=mobilefirst.css.map */
