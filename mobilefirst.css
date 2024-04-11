@@ -17,17 +17,23 @@
     margin-left: 80px;
     padding-top: 20px;
   }
-  .div_image_nouveau {
-    position: relative;
-    margin-left: 230px;
-    bottom: 200px;
-    display: none;
-  }
-  .div_image_nouveau .image_Nouveau {
+  .image_Nouveau {
     width: 80px;
     height: 29px;
     border-radius: 2px;
     display: block;
+    position: absolute;
+    margin-left: 240px;
+    top: 1040px;
+  }
+  .image_Nouveau2 {
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    margin-left: 240px;
+    top: 1320px;
   }
   form {
     margin-left: 120px;
@@ -169,7 +175,7 @@
     left: 0;
     float: left;
     padding-top: 20px;
-    margin-left: 20px;
+    margin-left: 0;
   }
   aside {
     font-family: "robot", sans-serif;
@@ -223,7 +229,7 @@
   }
   footer {
     position: absolute !important;
-    top: 2100px !important;
+    top: 2120px !important;
     width: 375px;
   }
   .pasdepage_c {
@@ -231,6 +237,7 @@
     max-width: 375px;
     height: 186px;
     color: white;
+    margin-top: 10px;
   }
   .pasdepage_c .bloc_footer {
     display: grid;
