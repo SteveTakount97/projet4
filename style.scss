@@ -1,0 +1,240 @@
+@media all and (min-width: 723px) {
+    header{
+        background-color: #FFFFFF;
+       display: grid;
+       grid-template-rows: 96px 50px;
+        min-width: 1440px;
+        height: 146px;
+    }
+    .image_head{
+        width: 200px;
+        height: 34px;
+     display: block;
+    margin: auto;
+    padding-top: 20px;
+    }
+    .position_head{
+        background-color: #EAEAEA;
+       display: flex;
+       justify-content: center;
+       padding-top: 20px;
+        
+        .image_position {
+            width: 12px;
+            height: 16px;
+            float: left;
+        }
+        .champ{
+            padding: auto;
+            font-weight: 100px;
+            border: none;
+            background-color: #EAEAEA;
+        }
+    }
+    .container_menu{
+        display:grid;
+        grid-template-rows: 47px 46px 50px;
+        gap: 30px;
+        background-color: #F6F6F6;
+        place-items: center;
+     }
+     .titre_one{
+        max-width: 645px;
+         max-height: 47px;
+         font-family: "robot", sans-serif;
+         size: 40px;
+         font-weight: 700;
+         line-height: 28.13px;
+         position: relative;
+         top: 12px;
+         left: 42px;
+     }
+     .titre_two{
+         width: 531px;
+         height: 46px;
+       text-align: center;
+       line-height: 21.09px;
+       font-family: "robot", sans-serif;
+       size: 18px;
+       font-weight: 300;
+       color: #353535;
+       margin-left: 130px;
+     }
+     .titre_tree{
+         width: 218px;
+         height: 50px;
+         padding-top: auto;
+        font-family: "robot", sans-serif;
+        text-align: center;
+        size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+      
+    }
+     //configuration du button
+     
+     $button-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+     
+     .button{
+     background-image: $button-color;
+     border-radius: 35px;
+     border: 1px #FF79DA solid;
+     color: white;
+     padding-top: 15px;
+     }
+     html, body{
+              background-color: rgb(247, 248, 248);
+              max-width: 1440px;
+              margin: 0;
+              overflow-x: hidden;
+         
+         }
+    .sous_titre_menu{
+      margin-left: 180px;
+    }
+    .menu_one {
+    
+    width: 1440px;
+    height: 228px;
+    }
+    .menu{
+        
+        display: grid;
+        grid-template-columns: 335px 335px 335px;
+        grid-template-rows: 72px 72px 72px;
+        gap: 25px;
+        margin-left: 160px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .menu_titre{
+        width: 275px;
+        height: 31px;
+        gap: 0px;
+        opacity: 0px;
+        margin-left: 192px;
+        //styleName: Section Title;
+         font-family: Roboto;
+         font-size: 24px;
+         font-weight: 700;
+           line-height: 28.13px;
+
+        
+    }
+    .image_menu{
+        float: left;
+        margin-left: 40px;
+    padding-top: 20px;
+    width: 24px;
+        height: 24px;
+        margin-right: 20px;
+        .image_m{
+            width: 13.02px;
+            height: 19.9px;
+            opacity: 0px;
+          }
+          .image_mi{
+            width: 16px;
+            height: 15.92px;
+          }
+          .image_mo{
+            Width: 18px;
+            Height: 17.91px;
+          }
+        }
+        .image_me{
+            float: left;
+            padding-top: 20px;
+            
+          }
+     .cmenu{
+            border: 1px #F6F6F6 solid;
+            border-radius: 20px;
+            margin-left: 20px;
+            background-color: #F6F6F6;
+            box-shadow: 2px 2px 2px 1px #cec7c7;
+          }
+ //config menu restaurant
+ .div_cadre{
+  padding-bottom: 10px;
+  .sdiv_cadre{
+    margin-top: 10px;
+  }
+ }
+ .imageM{
+    width: 490px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+         
+}
+.image_Nouveau{
+  float: right;
+  position: relative;
+  bottom: 200px;
+}
+ .smenu_principal{
+    display: grid;
+    grid-template-columns: 490px 490px;
+    grid-template-rows: 251px 251px;
+    gap: 100px;
+    place-items: center;
+    margin-left: 180px;
+    padding-top: 58px;
+}
+.smenu_one{
+    width: 268.72px;
+height: 28px;
+gap: 0px;
+opacity: 0px;
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 28.13px;
+margin-left: 180px;
+
+}
+.image_like{
+    width: 22px;
+    height: 21px;
+    float: right;
+   margin-right: 40px;
+    filter: grayscale(100%); 
+    transition: filter 0.9 ease;
+    &:hover{
+      filter: hue-rotate(270deg);
+     }
+  }
+  //configuration footer
+  footer{
+    background-color: #353535;
+    color: #F6F6F6;
+    height: 114px;
+  .bloc_footer{
+ display: grid;
+ grid-template-columns: 190px 190px 144px 138px 138px;
+    margin-top: 40px;
+    max-width: 661px;
+   grid-template-rows: 20px;
+   padding-top: 70px;
+   gap: 7px;
+   margin-left: 290px;
+  }
+  .image_footer{
+    float: left;
+    margin-right: 10px;
+  }
+  .image_foot{
+    width: 137,58px;
+    height: 20px;
+    font-style: italic;
+    size: 18px;
+    line-height: 26,24px;
+    filter: brightness(0) invert(1) hue-rotate(180deg); 
+    position: relative;
+    margin-left: 1000px;
+  }
+}
+
+
+}

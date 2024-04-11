@@ -1,0 +1,205 @@
+@media screen and (max-width: 480px){
+    header{
+        background-color: #FFFFFF;
+        margin-left: 0;
+        width: 375px;
+        height: 63px;
+    }
+    .image_head{
+        width: 162px;
+         height: 44px;
+     display: block;
+    margin: auto;
+     
+ }
+ .image_goback{
+    width: 30px;
+    height: 30px;
+    float: left;
+ }
+ .imageM{
+    width: 375px;
+    height: 375px;
+}
+// configuration du body
+html, body{
+    min-width: 375px;
+    margin: 0;
+    overflow-x: hidden;
+}
+hr{
+  border: none;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  margin-left: 0;
+ margin-top: 0;
+ margin-bottom: 0;
+
+}
+h1{
+  font-family: Shrikhand;
+font-size: 28px;
+font-style: italic;
+font-weight: 400;
+line-height: 40.82px;
+text-align: left;
+width: 341px;
+height: 27px;
+margin-left: 17px;
+
+}
+ .menudujour{
+  width: 375px;
+  height: 1307px;
+  background-color: #F6F6F6;
+  border: none;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+  top: 283px;
+ }
+.image_like{
+  width: 22px;
+  height: 21px;
+  float: right;
+  right: 60px;
+  position: absolute;
+  top: 30px;
+}
+.container_main{
+  display: grid;
+  grid-template-rows: 270px 270px 270px;
+ 
+}
+.selecteur{
+  margin-top: 40px;
+  margin-bottom: 12px;
+  width: 275px;
+  height: 27px;
+  margin-left: 8px;
+}
+.entree{
+  display: grid;
+      grid-template-rows: 69px 69px 69px;
+      gap: 12px;
+      height: 351px;
+}
+   .plats{
+    display: grid;
+      grid-template-rows: 69px 69px 69px;
+      gap: 12px;
+      height: 251px;
+   }
+     .dessert{
+      display: grid;
+      grid-template-rows: 69px 69px 69px;
+      gap: 12px;
+     }
+.entree_s{
+  background-color: #FFFFFF;
+  width: 339px;
+  border-radius: 20px;
+  padding: 15px;
+  margin-left: 10px; 
+}
+h2{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  text-align: left;
+  color:  #000000;
+  width: 287px;
+  height: 21px;
+  gap: 0px;
+  opacity: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+span{
+  width: 18px;
+  height: 18px;
+ float: right;
+ margin-right: 20px;
+ font-family: Roboto;
+font-size: 15.04px;
+font-weight: 700;
+line-height: 17.63px;
+color: #353535;
+position: relative;
+bottom: 15px;
+}
+
+aside{
+  font-family: Roboto;
+font-size: 15.04px;
+font-weight: 300;
+line-height: 17.63px;
+text-align: left;
+width: 287px;
+height: 19px;
+gap: 0px;
+opacity: 0px;
+margin-top: 0;
+
+}
+$button-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+.button_commander{
+  width: 186px;
+height: 50px;
+border-radius: 25px;
+opacity: 0px;
+background-image: $button-color;
+position: absolute;
+bottom: 100px;
+margin-left: 90px;
+//styleName: Button;
+.button{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+}
+
+
+
+
+
+//configuration footer
+footer{
+  position: absolute;
+  top: 1550px;
+  width: 375px;
+}
+ .image_foot{
+    width: 137,58px;
+    height: 27px;
+    font-style: italic;
+    size: 18px;
+    line-height: 26,24px;
+    filter: brightness(0) invert(1) hue-rotate(180deg); 
+    margin-top: 2px;
+  }
+  .pasdepage_c{
+    background-color: #353535;
+    max-width: 375px;
+    height: 186px;
+    color: white;
+     .bloc_footer{
+       display: grid;
+       gap: 17px;
+       margin-left: 20px;
+    }
+  }
+  .image_footer{
+    float: left;
+    margin-right: 10px;
+
+  }
+}
