@@ -1,4 +1,33 @@
 @media all and (min-width: 723px) {
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; // Hauteur de la barre de progression
+    background-color: #007bff; // Couleur de la barre de progression
+    z-index: 9999; // Assure que le loader est au-dessus de tout le reste
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out; // Transition pour une apparition en douceur
+  
+    &.hidden {
+      opacity: 0; // Cache le loader lorsque la classe 'hidden' est appliquée
+      pointer-events: none; // Empêche les interactions avec le contenu derrière le loader
+    }
+  
+    .loader-bar {
+      width: 0; // La largeur de la barre de progression commence à zéro
+      height: 4px; // Hauteur de la barre de progression
+      background-color: #007bff; // Couleur de la barre de progression
+      transition: width 1s ease-in-out; // Transition pour animer la progression
+      animation: loaderannimation 3s linear forwards;
+    }
+    @keyframes loaderannimation {
+      100%{
+        width: 100%;
+      }
+    }
+  }
     header{
         background-color: #FFFFFF;
        display: grid;
@@ -58,7 +87,7 @@
        size: 18px;
        font-weight: 300;
        color: #353535;
-       margin-left: 120px;
+       margin-left: 52px;
      }
      .titre_tree{
          width: 218px;
@@ -74,6 +103,9 @@
      //configuration du button
      
      $button-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+     $couleurPrincipale: #9356dc;
+     $couleurSurvol: lighten($couleurPrincipale, 10%); // Légèrement éclaircie
+     $ombreSurvol: 0 0 10px rgba(0, 0, 0, 0.5); // Ombre portée plus visible
      
      .button{
      background-image: $button-color;
@@ -81,6 +113,13 @@
      border: 1px #FF79DA solid;
      color: white;
      padding-top: 15px;
+     transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
+       
+     &:hover {
+      background-color: $couleurSurvol;
+      box-shadow: $ombreSurvol;
+  }
+
      }
      html, body{
               background-color: rgb(247, 248, 248);

@@ -65,6 +65,7 @@
   .container_main {
     display: grid;
     grid-template-rows: 270px 270px 270px;
+    animation: fadeIn 0.5s ease-in-out forwards;
   }
   .selecteur {
     margin-top: 40px;
@@ -73,20 +74,32 @@
     height: 27px;
     margin-left: 8px;
   }
-  .entree {
+  .entree, .plats, .dessert {
     display: grid;
     grid-template-rows: 69px 69px 69px;
     gap: 12px;
   }
-  .plats {
-    display: grid;
-    grid-template-rows: 69px 69px 69px;
-    gap: 12px;
+  .entree .entree_s, .plats .entree_s, .dessert .entree_s {
+    opacity: 0;
+    transform: translateX(-10px);
+    animation: slideIn 0.9s ease-in-out forwards;
   }
-  .dessert {
-    display: grid;
-    grid-template-rows: 69px 69px 69px;
-    gap: 12px;
+  .entree .entree_s:nth-child(2), .plats .entree_s:nth-child(2), .dessert .entree_s:nth-child(2) {
+    animation-delay: 1s;
+  }
+  .entree .entree_s:nth-child(3), .plats .entree_s:nth-child(3), .dessert .entree_s:nth-child(3) {
+    animation-delay: 2s;
+  }
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
   }
   .entree_s {
     background-color: #FFFFFF;
@@ -143,6 +156,11 @@
     position: absolute;
     bottom: 200px;
     margin-left: 90px;
+    transition: background-image 0.3s, box-shadow 0.3s;
+  }
+  .button_commander:hover {
+    background-color: #ae80e5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   .button_commander .button {
     font-family: Roboto;

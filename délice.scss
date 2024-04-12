@@ -69,6 +69,7 @@ margin-left: 17px;
 .container_main{
   display: grid;
   grid-template-rows: 270px 270px 270px;
+  animation: fadeIn 0.5s ease-in-out forwards;
  
 }
 .selecteur{
@@ -78,21 +79,39 @@ margin-left: 17px;
   height: 27px;
   margin-left: 8px;
 }
-.entree{
+.entree, .plats, .dessert{
   display: grid;
       grid-template-rows: 69px 69px 69px;
       gap: 12px;
+
+      .entree_s{
+        opacity: 0;
+        transform: translateX(-10px); // Décalage initial vers la gauche
+        animation: slideIn 0.9s ease-in-out forwards;
+      
+        &:nth-child(2) {
+          animation-delay: 1s; // Léger décalage pour le deuxième élément
+        }
+      
+        &:nth-child(3) {
+          animation-delay: 2s; // Léger décalage pour le troisième élément
+        }
+      }  
+      }
+      
+      @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0); // Pas de décalage
+      }
+      }
+      
+      @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
 }
-   .plats{
-    display: grid;
-      grid-template-rows: 69px 69px 69px;
-      gap: 12px;
-   }
-     .dessert{
-      display: grid;
-      grid-template-rows: 69px 69px 69px;
-      gap: 12px;
-     }
+   
 .entree_s{
   background-color: #FFFFFF;
   width: 339px;
@@ -142,6 +161,9 @@ margin-top: 0;
 
 }
 $button-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+$couleurPrincipale: #9356dc;
+$couleurSurvol: lighten($couleurPrincipale, 10%); // Légèrement éclaircie
+$ombreSurvol: 0 0 10px rgba(0, 0, 0, 0.5); // Ombre portée plus visible
 
 .button_commander{
   width: 186px;
@@ -152,6 +174,13 @@ background-image: $button-color;
 position: absolute;
 bottom: 200px;
 margin-left: 90px;
+transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
+       
+&:hover {
+ background-color: $couleurSurvol;
+ box-shadow: $ombreSurvol;
+}
+
 //styleName: Button;
 .button{
   font-family: Roboto;
@@ -200,5 +229,4 @@ footer{
     margin-right: 10px;
 
   }
- 
 }
