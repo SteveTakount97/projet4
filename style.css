@@ -228,8 +228,8 @@
     height: 21px;
     float: right;
     margin-right: 40px;
-    filter: grayscale(100%);
-    transition: filter 0.9 ease;
+    display: block;
+    transition: filter 0.5s ease;
   }
   .image_like:hover {
     filter: hue-rotate(270deg);
@@ -262,5 +262,12 @@
     filter: brightness(0) invert(1) hue-rotate(180deg);
     position: relative;
     margin-left: 1000px;
+  }
+  a {
+    text-decoration: none;
+    color: initial;
+  }
+  .color_contact {
+    color: #FFFFFF;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -183,6 +183,7 @@
     line-height: 26, 24px;
     filter: brightness(0) invert(1) hue-rotate(180deg);
     margin-top: 2px;
+    padding-top: 16px;
   }
   .pasdepage_c {
     background-color: #353535;
@@ -192,11 +193,18 @@
   }
   .pasdepage_c .bloc_footer {
     display: grid;
-    gap: 17px;
+    gap: 10px;
     margin-left: 20px;
   }
   .image_footer {
     float: left;
     margin-right: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: initial;
+  }
+  .color_contact {
+    color: #FFFFFF;
   }
 }/*# sourceMappingURL=française.css.map */

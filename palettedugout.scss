@@ -193,6 +193,13 @@ transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
 }
 
 
+a{
+  text-decoration: none;
+  color: initial;
+}
+.color_contact{
+color: #FFFFFF;
+}
 
 
 
@@ -210,6 +217,7 @@ footer{
   line-height: 26,24px;
   filter: brightness(0) invert(1) hue-rotate(180deg); 
   margin-top: 2px;
+  padding-top: 16px;
 }
 footer{
   position: absolute !important;
@@ -223,7 +231,7 @@ footer{
   color: white;
    .bloc_footer{
      display: grid;
-     gap: 17px;
+     gap: 10px;
      margin-left: 20px;
   }
 }
@@ -468,6 +476,13 @@ grid-template-columns: 190px 190px 138px 138px 138px;
 }
 }
 
+a{
+  text-decoration: none;
+  color: initial;
+}
+.color_contact{
+color: #FFFFFF;
+}
 
 
 }

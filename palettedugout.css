@@ -170,6 +170,13 @@
     color: #FFFFFF;
     text-align: center;
   }
+  a {
+    text-decoration: none;
+    color: initial;
+  }
+  .color_contact {
+    color: #FFFFFF;
+  }
   footer {
     position: absolute;
     top: 1350px;
@@ -183,6 +190,7 @@
     line-height: 26, 24px;
     filter: brightness(0) invert(1) hue-rotate(180deg);
     margin-top: 2px;
+    padding-top: 16px;
   }
   footer {
     position: absolute !important;
@@ -197,7 +205,7 @@
   }
   .pasdepage_c .bloc_footer {
     display: grid;
-    gap: 17px;
+    gap: 10px;
     margin-left: 20px;
   }
   .image_footer {
@@ -409,5 +417,12 @@
     filter: brightness(0) invert(1) hue-rotate(180deg);
     position: relative;
     margin-left: 1000px;
+  }
+  a {
+    text-decoration: none;
+    color: initial;
+  }
+  .color_contact {
+    color: #FFFFFF;
   }
 }/*# sourceMappingURL=palettedugout.css.map */
