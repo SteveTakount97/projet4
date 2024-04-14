@@ -100,6 +100,9 @@
       opacity: 1;
     }
   }
+  .select-button {
+    display: none;
+  }
   .entree_s {
     background-color: #FFFFFF;
     width: 339px;
@@ -324,6 +327,9 @@
     padding: 15px;
     margin-left: 200px;
   }
+  .entree_s:hover .select-button {
+    display: block;
+  }
   h2 {
     font-family: Roboto;
     font-size: 18px;
@@ -337,6 +343,14 @@
     opacity: 0px;
     margin-bottom: 0;
     margin-top: 0;
+  }
+  .select-button {
+    float: right;
+    height: 69px;
+    position: absolute;
+    top: 0;
+    margin-left: 642px;
+    display: none;
   }
   span {
     width: 18px;
