@@ -1,3 +1,8 @@
+/****** General ***********/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 @media all and (min-width: 723px) {
   .loader {
     position: fixed;
@@ -28,80 +33,95 @@
   }
   header {
     background-color: #FFFFFF;
-    display: grid;
-    grid-template-rows: 96px 50px;
-    min-width: 1440px;
-    height: 146px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .image_head {
     width: 200px;
-    height: 34px;
+    height: 96px;
+    -o-object-fit: cover;
+       object-fit: cover;
     display: block;
     margin: auto;
     padding-top: 20px;
   }
-  .position_head {
+  ul {
+    list-style-type: none;
+  }
+  ul a {
+    color: #FFFFFF;
+  }
+  .introduction {
     background-color: #EAEAEA;
+    height: 50px;
+    width: 100%;
+  }
+  .search {
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
+    padding-left: 45%;
+    padding-top: 8px;
   }
-  .position_head .image_position {
-    width: 12px;
-    height: 16px;
-    float: left;
+  .search .search-icon {
+    width: 14px;
+    height: 20px;
   }
-  .position_head .champ {
-    padding: auto;
-    font-weight: 100px;
+  .search .search-text {
+    height: 24px;
+  }
+  .search .search-text input {
+    width: 110px;
     border: none;
     background-color: #EAEAEA;
+    padding-left: 15px;
+    font-family: "Roboto" sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    outline: none;
   }
   .container_menu {
-    display: grid;
-    grid-template-rows: 47px 46px 50px;
-    gap: 30px;
-    background-color: #F6F6F6;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
   }
-  .titre_one {
-    max-width: 645px;
-    max-height: 47px;
+  .container_menu h1 {
+    text-align: center;
+    height: 63px;
     font-family: "robot", sans-serif;
-    size: 40px;
     font-weight: 700;
-    line-height: 28.13px;
-    position: relative;
-    top: 12px;
-    left: 42px;
+    color: #000000;
+    font-size: 46px;
   }
-  .titre_two {
-    width: 531px;
+  .container_menu .titre_two {
+    text-align: center;
     height: 46px;
     text-align: center;
     line-height: 21.09px;
-    font-family: "robot", sans-serif;
-    size: 18px;
+    font-size: 22px;
     font-weight: 300;
     color: #353535;
-    margin-left: 52px;
+    margin-bottom: 10px;
+    padding: 10px;
   }
-  .titre_tree {
+  .container_menu .titre_tree {
     width: 218px;
     height: 50px;
-    padding-top: auto;
-    font-family: "robot", sans-serif;
     text-align: center;
     size: 16px;
     font-weight: 500;
     line-height: 18.75px;
+  }
+  .button-menu {
+    display: flex;
+    justify-content: center;
   }
   .button {
     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     border-radius: 35px;
     border: 1px #FF79DA solid;
     color: white;
-    padding-top: 15px;
     transition: background-image 0.3s, box-shadow 0.3s;
   }
   .button:hover {

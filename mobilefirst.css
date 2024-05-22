@@ -1,5 +1,13 @@
 @charset "UTF-8";
+/****** General ***********/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 @media screen and (max-width: 480px) {
+  html {
+    display: flex;
+  }
   .loader {
     position: fixed;
     top: 0;
@@ -29,20 +37,54 @@
   }
   header {
     background-color: #FFFFFF;
-    display: grid;
-    grid-template-rows: 63px 50px;
-    max-width: 375px;
-    height: 113px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .div_image_head {
-    min-width: 375px;
-    margin-left: 5px;
+  ul {
+    list-style-type: none;
+  }
+  ul a {
+    color: #FFFFFF;
+  }
+  .introduction {
+    background-color: #EAEAEA;
+    height: 50px;
+    width: 100%;
+  }
+  .search {
+    display: flex;
+    padding-left: 29%;
+    padding-top: 8px;
+  }
+  .search .search-icon {
+    width: 14px;
+    height: 20px;
+  }
+  .search .search-text {
+    height: 24px;
+  }
+  .search .search-text input {
+    width: 110px;
+    border: none;
+    background-color: #EAEAEA;
+    padding-left: 15px;
+    font-family: "Roboto" sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    outline: none;
   }
   .image_head {
-    width: 197px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 63px;
+  }
+  .image_head .img-head {
+    width: 45vw;
     height: 36px;
-    margin-left: 80px;
-    padding-top: 20px;
+    padding: 15px;
   }
   .image_Nouveau {
     width: 80px;
@@ -50,8 +92,7 @@
     border-radius: 2px;
     display: block;
     position: absolute;
-    margin-left: 240px;
-    top: 1040px;
+    margin-left: 70%;
   }
   .image_Nouveau2 {
     width: 80px;
@@ -59,81 +100,54 @@
     border-radius: 2px;
     display: block;
     position: absolute;
-    margin-left: 240px;
-    top: 1320px;
-  }
-  form {
-    margin-left: 120px;
-  }
-  .position_head {
-    background-color: #EAEAEA;
-    padding-top: 20px;
-  }
-  .position_head .image_position {
-    width: 12px;
-    height: 16px;
-    float: left;
-  }
-  .position_head .champ {
-    padding: auto;
-    font-weight: 100px;
-    border: none;
-    background-color: #EAEAEA;
-    font-family: "Roboto" sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18.75px;
-    text-align: left;
-    color: #353535;
+    margin-left: 70%;
+    top: 1222px;
   }
   .container_menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
   }
-  .titre_one {
-    max-width: 275px;
-    height: 68px;
+  .container_menu h1 {
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 63px;
     font-family: "robot", sans-serif;
-    size: 24px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 28.13px;
-    position: relative;
-    bottom: 30px;
-    left: 32px;
-    padding-bottom: 10px;
+    color: #000000;
   }
-  .titre_two {
-    width: 315px;
+  .container_menu .titre_two {
+    width: 90%;
     height: 46px;
-    position: relative;
-    top: 40px;
-    left: 34px;
     text-align: center;
     line-height: 21.09px;
     font-family: "robot", sans-serif;
-    size: 18px;
+    font-size: 18px;
     font-weight: 300;
     color: #353535;
+    margin-bottom: 10px;
+    padding: 10px;
   }
-  .titre_tree {
+  .container_menu .titre_tree {
     width: 218px;
     height: 40px;
     font-family: "robot", sans-serif;
     text-align: center;
-    position: relative;
     size: 16px;
     font-weight: 500;
     line-height: 18.75px;
-    top: 80px;
-    left: 74px;
+  }
+  .button-menu {
+    display: flex;
+    justify-content: center;
   }
   .button {
     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     border-radius: 35px;
     border: 1px #FF79DA solid;
     color: white;
-    padding-top: 15px;
     transition: background-image 0.3s, box-shadow 0.3s;
   }
   .button:hover {
@@ -142,32 +156,30 @@
   }
   html, body {
     background-color: rgb(247, 248, 248);
-    max-width: 375px !important;
+    width: 100%;
   }
   html main, body main {
     overflow-x: hidden !important;
   }
   .menu_one {
-    margin-top: 150px;
-    min-width: 375px;
     height: 440px;
     background-color: #FFFFFF;
     margin-left: 0;
   }
-  h1 {
+  h2 {
     font-family: "robot", sans-serif;
-    size: 24px;
+    font-size: 24px;
     line-height: 28.13px;
     text-align: left;
     font-weight: 700;
     color: #000000;
-    width: 275px;
-    height: 31px;
+  }
+  .sous_titre_menu {
     padding: 40px;
   }
   .cmenu {
     border: 1px #F6F6F6 solid;
-    width: 335px;
+    width: 80vw;
     height: 72.38px;
     border-radius: 20px;
     margin-left: 20px;
@@ -221,7 +233,7 @@
   .div_cadre {
     margin-left: 17px;
     background-color: #FFFFFF;
-    width: 340px;
+    width: 90%;
   }
   /* Réinitialisation CSS */
   img {
@@ -230,10 +242,12 @@
     max-height: 100%; /* Permet à l'image de conserver ses proportions d'origine lorsqu'elle est redimensionnée */
   }
   .imageM {
-    width: 340px !important;
+    width: 100% !important;
     height: 200px !important;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   div .image_like {
     width: 22px;
@@ -249,6 +263,7 @@
     grid-template-rows: 251px 251px 251px 251px;
     gap: 20px;
     padding: auto;
+    width: 100%;
   }
   .image_foot {
     width: 137, 58px;
@@ -262,17 +277,16 @@
   }
   footer {
     position: absolute !important;
-    top: 2120px !important;
-    width: 375px;
-  }
-  .pasdepage_c {
+    top: 2040px !important;
+    width: 100%;
     background-color: #353535;
-    max-width: 375px;
+  }
+  footer .pasdepage_c {
     height: 186px;
     color: white;
     margin-top: 10px;
   }
-  .pasdepage_c .bloc_footer {
+  footer .bloc_footer {
     display: grid;
     gap: 10px;
     margin-left: 20px;

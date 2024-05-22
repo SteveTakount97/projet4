@@ -1,3 +1,9 @@
+/****** General ***********/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+
 @media all and (min-width: 723px) {
   .loader {
     position: fixed;
@@ -28,92 +34,106 @@
       }
     }
   }
-    header{
-        background-color: #FFFFFF;
-       display: grid;
-       grid-template-rows: 96px 50px;
-        min-width: 1440px;
-        height: 146px;
-    }
+  header{
+    background-color: #FFFFFF;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  }
     .image_head{
         width: 200px;
-        height: 34px;
+        height: 96px;
+        object-fit: cover;
      display: block;
     margin: auto;
     padding-top: 20px;
     }
-    .position_head{
-        background-color: #EAEAEA;
-       display: flex;
-       justify-content: center;
-       padding-top: 20px;
-        
-        .image_position {
-            width: 12px;
-            height: 16px;
-            float: left;
+    ul{
+      list-style-type: none;
+        a{
+          color: #FFFFFF;
         }
-        .champ{
-            padding: auto;
-            font-weight: 100px;
-            border: none;
-            background-color: #EAEAEA;
-        }
+    }
+    .introduction{
+      background-color: #EAEAEA;
+      height: 50px;
+      width: 100%;
+    }
+    .search{
+      display: flex;
+      padding-left: 45%;
+      padding-top: 8px;
+      .search-icon{
+        width: 14px;
+        height: 20px;
+      }
+      .search-text{
+        height: 24px;
+      input{
+        width: 110px;
+        border: none;
+       background-color: #EAEAEA;
+       padding-left: 15px;
+       font-family: "Roboto" sans-serif;
+       font-size: 16px;
+       font-weight: 700;
+       color: #000000;
+       outline: none;
+     }
+      }
     }
     .container_menu{
-        display:grid;
-        grid-template-rows: 47px 46px 50px;
-        gap: 30px;
-        background-color: #F6F6F6;
-        place-items: center;
-     }
-     .titre_one{
-        max-width: 645px;
-         max-height: 47px;
-         font-family: "robot", sans-serif;
-         size: 40px;
-         font-weight: 700;
-         line-height: 28.13px;
-         position: relative;
-         top: 12px;
-         left: 42px;
-     }
-     .titre_two{
-         width: 531px;
-         height: 46px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      h1{
        text-align: center;
-       line-height: 21.09px;
+       height: 63px;
        font-family: "robot", sans-serif;
-       size: 18px;
-       font-weight: 300;
-       color: #353535;
-       margin-left: 52px;
-     }
-     .titre_tree{
-         width: 218px;
-         height: 50px;
-         padding-top: auto;
-        font-family: "robot", sans-serif;
-        text-align: center;
-        size: 16px;
-        font-weight: 500;
-        line-height: 18.75px;
-      
+           font-weight: 700;
+           color: #000000;
+           font-size: 46px;
+   }
+   .titre_two{
+   text-align: center;
+     height: 46px;
+   text-align: center;
+   line-height: 21.09px;
+   font-size: 22px;
+   font-weight: 300;
+   color: #353535;
+   margin-bottom: 10px;
+   padding: 10px;
+   }
+   .titre_tree{
+     width: 218px;
+     height: 50px;
+     text-align: center;
+     size: 16px;
+     font-weight: 500;
+     line-height: 18.75px;
+   
+   }
+   }
+    .button-menu{
+      display: flex;
+      justify-content: center;
     }
-     //configuration du button
-     
-     $button-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-     $couleurPrincipale: #9356dc;
-     $couleurSurvol: lighten($couleurPrincipale, 10%); // Légèrement éclaircie
-     $ombreSurvol: 0 0 10px rgba(0, 0, 0, 0.5); // Ombre portée plus visible
-     
-     .button{
-     background-image: $button-color;
-     border-radius: 35px;
-     border: 1px #FF79DA solid;
-     color: white;
-     padding-top: 15px;
-     transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
+    
+    //configuration du button
+    
+    $button-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    $couleurPrincipale: #9356dc;
+    $couleurSurvol: lighten($couleurPrincipale, 10%); // Légèrement éclaircie
+    $ombreSurvol: 0 0 10px rgba(0, 0, 0, 0.5); // Ombre portée plus visible
+    
+    .button{
+    background-image: $button-color;
+    border-radius: 35px;
+    border: 1px #FF79DA solid;
+    color: white;
+    transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
        
      &:hover {
       background-color: $couleurSurvol;

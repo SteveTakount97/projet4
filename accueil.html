@@ -6,6 +6,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="mobilefirst.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
    </head> 
    <body>
@@ -14,21 +20,35 @@
        </div>
        <div id="content" class="hidden">
       <header>
-         <div class="div_image_head"><img src="Images et textes Ohmyfood\images\logo\ohmyfood.png" class="image_head"></div>
-         <div class="position_head">
-            <form method="post" action="#">
-             <img src="Images et textes Ohmyfood\images\logo\Icon\Pin.png" class="image_position" alt="image_position"><input class="champ" type="text" value="Paris, Belleville">
-           </form> 
-         </div> 
+        <div class="image_head">
+          <a><img src="Images et textes Ohmyfood\images\logo\ohmyfood.png" class="img-head"></a>
+       </div>
+       <div class="introduction">
+        <form class="search" method="post" action="#">
+         <div class="search-icon">
+           <label for="cityName"
+              ><i class="fa-solid fa-location-dot"></i
+           ></label>
+         </div>
+         <div class="search-text">
+            <input
+              type="text"
+              id="cityName"
+              name="cityName"
+              placeholder="Paris, Belleville"
+              value=""
+            />
+         </div>
+       </form> </div>
      </header>
      <main>
          <div class="container_menu">
-           <div class="titre_one"><h1>Réserver le menu qui vous convient</h1></div>  
-           <div class="titre_two">Découvrez des restaurants d'exception, sélectionnés par nos soins</div>  
-           <div class="titre_tree button">Explorer nos restaurants </div>
-        </div> 
+           <div class="titre_one"><h1>Réserver le menu qui vous convient</h1> </div>
+           <aside class="titre_two">Découvrez des restaurants d'exception, sélectionnés par nos soins</aside>  
+           <div class="button-menu"><button type="button" class="titre_tree button">Explorer nos restaurants </button></div>
+         </div> 
         <section class="menu_one">
-            <h1 class="sous_titre_menu"><strong>Fonctionnement</strong></h1>
+            <h2 class="sous_titre_menu">Fonctionnement</h2>
             <div class="menu">
                <div class="cmenu_one cmenu"><img src="Images et textes Ohmyfood\images\logo\Group 2.png" class="image_num image_me"  alt=""><img src="Images et textes Ohmyfood\images\logo\mobile-screen-button.png" class="image_menu image_m" alt=""><h3 class="menu_titre_one">choisissez un restaurant</h3></div>
                <div class="cmenu_two cmenu"><img src="Images et textes Ohmyfood\images\logo\Group_1.png" class="image_num image_me" alt=""><img src="Images et textes Ohmyfood\images\logo\list-ul.png" class="image_menu image_mi" alt=""><h3 class="menu_titre_one">composez votre menu</h3></div>
@@ -36,7 +56,7 @@
            </div>
       </section>
       <section class="smenu">
-         <h1 class="sous_titre_menu"><strong>Restaurants</strong></h1>
+         <h2 class="sous_titre_menu"><strong>Restaurants</strong></h2>
          <img src="Images et textes Ohmyfood\images\logo\Card\Nouveau.png" class="image_Nouveau">
          <img src="Images et textes Ohmyfood\images\logo\Card\Nouveau.png" class="image_Nouveau2">
          <div class="smenu_principal">
@@ -69,17 +89,16 @@
 
       </main>
       <footer>
-         <section class="pasdepage_c">
-            <div class="bloc_footer pasdepage">
-                  <div class=""><img src="Images et textes Ohmyfood\images\logo\ohmyfood.png" class="image_foot"></div>
-                  <div><img src="Images et textes Ohmyfood\images\logo\Vector.png" class="image_footer"> <stong>Proposer un restaurant</stong></div> 
-                  <div><img src="Images et textes Ohmyfood\images\logo\Vector1.png" class="image_footer"> <stong> Devenir partenaire </stong></div> 
-                  <div> Mentions légales</div>
-                  <div><a href="mailto:ohmyfood@gmail.com" class="color_contact">Contact</a></div> 
-            </div> 
-         </section>
+         <nav class="pasdepage_c">
+            <ul class="bloc_footer pasdepage">
+                  <li class=""><img src="Images et textes Ohmyfood\images\logo\ohmyfood.png" class="image_foot"></li>
+                  <li><img src="Images et textes Ohmyfood\images\logo\Vector.png" class="image_footer"><a>Proposer un restaurant</a></li> 
+                  <li><img src="Images et textes Ohmyfood\images\logo\Vector1.png" class="image_footer"><a> Devenir partenaire</a></li> 
+                  <li><a> Mentions légales</a></li>
+                  <li><a href="mailto:ohmyfood@gmail.com" class="color_contact">Contact</a></li> 
+            <ul> 
+         </nav>
      </footer>
-   </div>
    </body>
 
 </html>
