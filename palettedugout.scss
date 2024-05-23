@@ -236,7 +236,8 @@ background-color: #353535;
    .bloc_footer{
      display: grid;
      gap: 10px;
-     margin-left: 20px;
+     margin-left: 0px;
+     padding-left: 25px;
   }
 }
 .image_footer{
@@ -259,10 +260,11 @@ color: #FFFFFF;
 
 //coniguration style palette du gout forfait Desktop
 @media all and (min-width: 723px){
+
   header{
     background-color: #FFFFFF;
     margin-left: 0;
-    width: 1440px;
+    width: 100%;
     height: 97px;
 }
 .image_head{
@@ -278,12 +280,13 @@ height: 31px;
 float: left;
 }
 .imageM{
-width: 1440px;
+width: 100%;
 height: 383px;
+object-fit: cover;
 }
 // configuration du body
 html, body{
-min-width: 675px;
+max-width: 1440px;
 margin: 0;
 overflow-x: hidden;
 }
@@ -297,7 +300,6 @@ margin-bottom: 0;
 
 }
 h1{
-font-family: Shrikhand;
 font-size: 28px;
 font-style: italic;
 font-weight: 400;
@@ -309,15 +311,15 @@ margin-left: 366px;
 
 }
 .menudujour{
-width: 1050px;
-height: 1221px;
-background-color: #F6F6F6;
-border: none;
-border-top-left-radius: 45px;
-border-top-right-radius: 45px;
-position: absolute;
-top: 450px;
-margin-left: 230px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  padding-bottom: 50px;
 }
 .image_like{
 width: 22px;
@@ -338,7 +340,7 @@ margin-top: 40px;
 margin-bottom: 12px;
 width: 275px;
 height: 27px;
-margin-left: 200px;
+margin-left: 160px;
 
 }
 
@@ -377,17 +379,16 @@ display: grid;
 }
 .entree_s{
 background-color: #FFFFFF;
-width: 634px;
+width: 70%;
 border-radius: 20px;
 padding: 15px;
-margin-left: 200px; 
+margin-left: 17%; 
 
 &:hover .select-button{
   display: block;
 }
 }
-h2{
-font-family: Roboto;
+h3{
 font-size: 18px;
 font-weight: 500;
 line-height: 21.09px;
@@ -441,15 +442,20 @@ $couleurPrincipale: #9356dc;
 $couleurSurvol: lighten($couleurPrincipale, 10%); // Légèrement éclaircie
 $ombreSurvol: 0 0 10px rgba(0, 0, 0, 0.5); // Ombre portée plus visible
 
+.div-button{
+   display: flex;
+   justify-content: center;
+   margin-top: 90px;
+}
 .button_commander{
 width: 186px;
 height: 50px;
 border-radius: 25px;
 opacity: 0px;
 background-image: $button-color;
-position: absolute;
-bottom: 100px;
-margin-left: 400px;
+color: #FFFFFF;
+
+
 
 transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
        
@@ -460,7 +466,6 @@ transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
 
 //styleName: Button;
 .button{
-font-family: Roboto;
 font-size: 16px;
 font-weight: 500;
 line-height: 18.75px;
@@ -478,29 +483,42 @@ text-align: center;
     }
   }
 
- footer{
-  position: absolute !important;
-  top: 2040px !important;
-  width: 100%;
-  background-color: #353535;
-  .pasdepage_c{
-    height: 186px;
-    color: white;
-    margin-top: 10px;
-  }
-     .bloc_footer{
-       display: grid;
-       gap: 10px;
-       margin-left: 20px;
+   //configuration footer
+   footer{
+    background-color: #353535;
+    color: #F6F6F6;
+    height: 114px;
+    width: 100%;
+    position: absolute;
+    top: 1650px;
+    .pasdepage_c{
+      display: flex;
+      flex-direction: row;
     }
-  }
-  .image_footer{
+    .bloc_footer{
+      width: 100%;
+      display: flex;
+     gap: 20px;
+     justify-content: end;
+     margin-top: 60px;
+    }
+    .img-first{
+      order: 1;
+      margin-right: 40px;
+    }
+    .image_footer{
     float: left;
     margin-right: 10px;
+  }
+  .image_foot{
+    height: 20px;
+    font-style: italic;
+    size: 18px;
+    line-height: 26,24px;
+    filter: brightness(0) invert(1) hue-rotate(180deg); 
+    position: relative;
 
   }
-dt{
-  margin-top: 5px;
 }
 a{
   text-decoration: none;
@@ -509,6 +527,5 @@ a{
 .color_contact{
 color: #FFFFFF;
 }
-
 
 }

@@ -213,7 +213,8 @@
   footer .bloc_footer {
     display: grid;
     gap: 10px;
-    margin-left: 20px;
+    margin-left: 0px;
+    padding-left: 25px;
   }
   .image_footer {
     float: left;
@@ -234,7 +235,7 @@
   header {
     background-color: #FFFFFF;
     margin-left: 0;
-    width: 1440px;
+    width: 100%;
     height: 97px;
   }
   .image_head {
@@ -249,11 +250,13 @@
     float: left;
   }
   .imageM {
-    width: 1440px;
+    width: 100%;
     height: 383px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   html, body {
-    min-width: 675px;
+    max-width: 1440px;
     margin: 0;
     overflow-x: hidden;
   }
@@ -266,7 +269,6 @@
     margin-bottom: 0;
   }
   h1 {
-    font-family: Shrikhand;
     font-size: 28px;
     font-style: italic;
     font-weight: 400;
@@ -277,15 +279,15 @@
     margin-left: 366px;
   }
   .menudujour {
-    width: 1050px;
-    height: 1221px;
+    display: flex;
+    flex-direction: column;
     background-color: #F6F6F6;
-    border: none;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
-    position: absolute;
-    top: 450px;
-    margin-left: 230px;
+    padding-bottom: 50px;
   }
   .image_like {
     width: 22px;
@@ -305,7 +307,7 @@
     margin-bottom: 12px;
     width: 275px;
     height: 27px;
-    margin-left: 200px;
+    margin-left: 160px;
   }
   .entree, .plats, .dessert {
     display: grid;
@@ -336,16 +338,15 @@
   }
   .entree_s {
     background-color: #FFFFFF;
-    width: 634px;
+    width: 70%;
     border-radius: 20px;
     padding: 15px;
-    margin-left: 200px;
+    margin-left: 17%;
   }
   .entree_s:hover .select-button {
     display: block;
   }
-  h2 {
-    font-family: Roboto;
+  h3 {
     font-size: 18px;
     font-weight: 500;
     line-height: 21.09px;
@@ -391,15 +392,18 @@
     opacity: 0px;
     margin-top: 0;
   }
+  .div-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+  }
   .button_commander {
     width: 186px;
     height: 50px;
     border-radius: 25px;
     opacity: 0px;
     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    position: absolute;
-    bottom: 100px;
-    margin-left: 400px;
+    color: #FFFFFF;
     transition: background-image 0.3s, box-shadow 0.3s;
   }
   .button_commander:hover {
@@ -407,7 +411,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   .button_commander .button {
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 18.75px;
@@ -422,27 +425,39 @@
     color: #FFFFFF;
   }
   footer {
-    position: absolute !important;
-    top: 2040px !important;
-    width: 100%;
     background-color: #353535;
+    color: #F6F6F6;
+    height: 114px;
+    width: 100%;
+    position: absolute;
+    top: 1650px;
   }
   footer .pasdepage_c {
-    height: 186px;
-    color: white;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
   }
   footer .bloc_footer {
-    display: grid;
-    gap: 10px;
-    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    margin-top: 60px;
   }
-  .image_footer {
+  footer .img-first {
+    order: 1;
+    margin-right: 40px;
+  }
+  footer .image_footer {
     float: left;
     margin-right: 10px;
   }
-  dt {
-    margin-top: 5px;
+  footer .image_foot {
+    height: 20px;
+    font-style: italic;
+    size: 18px;
+    line-height: 26, 24px;
+    filter: brightness(0) invert(1) hue-rotate(180deg);
+    position: relative;
   }
   a {
     text-decoration: none;

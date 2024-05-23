@@ -105,7 +105,7 @@
   display: block;
 position: absolute;
 margin-left: 70%; 
-top: 1222px;
+top: 1150px;
 }
 .container_menu{
    display: flex;
@@ -189,9 +189,13 @@ html, body{
       text-align: left;
         font-weight: 700;
         color: #000000;
+        margin-left: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .sous_titre_menu{
-      padding: 40px;
+      padding: 4px;
+      margin-left: 10px;
     }
   
   .cmenu{
@@ -279,12 +283,10 @@ img {
     }
   }
   .smenu_principal{
-    height: 1058px;
-    display: grid;
-    grid-template-rows: 251px 251px 251px 251px;
-    gap: 20px;
-    padding: auto;
+   display: flex;
+   flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
   .image_foot{
     width: 137,58px;
@@ -298,7 +300,7 @@ img {
   }
   footer{
     position: absolute !important;
-    top: 2040px !important;
+    top: 2000px !important;
     width: 100%;
     background-color: #353535;
     .pasdepage_c{

@@ -213,7 +213,8 @@
   footer .bloc_footer {
     display: grid;
     gap: 10px;
-    margin-left: 20px;
+    margin-left: 0px;
+    padding-left: 25px;
   }
   .image_footer {
     float: left;

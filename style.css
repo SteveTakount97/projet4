@@ -1,14 +1,10 @@
 /****** General ***********/
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 @media all and (min-width: 723px) {
   .loader {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 1440px;
     height: 2px;
     background-color: #007bff;
     z-index: 9999;
@@ -135,30 +131,29 @@
     overflow-x: hidden;
   }
   .sous_titre_menu {
+    font-size: 30px;
+    line-height: 18px;
+    font-weight: 700;
+    width: 100%;
+    margin-left: 180px;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 18px;
+    font-weight: 700;
     margin-left: 180px;
   }
   .menu_one {
-    width: 1440px;
+    max-width: 1440px;
     height: 228px;
   }
   .menu {
-    display: grid;
-    grid-template-columns: 335px 335px 335px;
-    grid-template-rows: 72px 72px 72px;
-    gap: 25px;
-    margin-left: 160px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
   }
-  .menu_titre {
-    width: 275px;
-    height: 31px;
-    gap: 0px;
-    opacity: 0px;
-    margin-left: 192px;
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 700;
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
     line-height: 28.13px;
   }
   .image_menu {
@@ -187,6 +182,8 @@
     padding-top: 20px;
   }
   .cmenu {
+    width: 25%;
+    height: 6%;
     border: 1px #F6F6F6 solid;
     border-radius: 20px;
     margin-left: 20px;
@@ -195,15 +192,24 @@
   }
   .div_cadre {
     padding-bottom: 10px;
+    width: 38%;
+    background-color: #FFFFFF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .div_cadre .sdiv_cadre {
     margin-top: 10px;
   }
   .imageM {
-    width: 490px;
+    width: 100%;
     height: 200px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .div-img-nouveau {
+    max-width: 1440px;
   }
   .image_Nouveau {
     width: 80px;
@@ -211,8 +217,8 @@
     border-radius: 2px;
     display: block;
     position: absolute;
-    margin-left: 540px;
-    top: 740px;
+    float: left;
+    top: 840px;
   }
   .image_Nouveau2 {
     width: 80px;
@@ -220,17 +226,18 @@
     border-radius: 2px;
     display: block;
     position: absolute;
-    margin-left: 1140px;
-    top: 740px;
+    margin-right: 10px;
+    top: 840px;
   }
   .smenu_principal {
-    display: grid;
-    grid-template-columns: 490px 490px;
-    grid-template-rows: 251px 251px;
-    gap: 100px;
-    place-items: center;
-    margin-left: 180px;
-    padding-top: 58px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .smenu {
+    background-color: #EAEAEA;
   }
   .smenu_one {
     width: 268.72px;
@@ -258,30 +265,34 @@
     background-color: #353535;
     color: #F6F6F6;
     height: 114px;
+    width: 100%;
+  }
+  footer .pasdepage_c {
+    display: flex;
+    flex-direction: row;
   }
   footer .bloc_footer {
-    display: grid;
-    grid-template-columns: 190px 190px 144px 138px 138px;
-    margin-top: 40px;
-    max-width: 661px;
-    grid-template-rows: 20px;
-    padding-top: 70px;
-    gap: 7px;
-    margin-left: 290px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    margin-top: 60px;
+  }
+  footer .img-first {
+    order: 1;
+    margin-right: 40px;
   }
   footer .image_footer {
     float: left;
     margin-right: 10px;
   }
   footer .image_foot {
-    width: 137, 58px;
     height: 20px;
     font-style: italic;
     size: 18px;
     line-height: 26, 24px;
     filter: brightness(0) invert(1) hue-rotate(180deg);
     position: relative;
-    margin-left: 1000px;
   }
   a {
     text-decoration: none;
