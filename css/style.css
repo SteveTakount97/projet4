@@ -37,7 +37,6 @@
     height: 96px;
     object-fit: cover;
     display: block;
-    margin: auto;
     padding-top: 20px;
   }
   ul {
@@ -137,7 +136,7 @@
     line-height: 18px;
     font-weight: 700;
     width: 100%;
-    margin-left: 180px;
+    margin-left: 12vw;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -203,6 +202,20 @@
     margin-top: 10px;
     padding-left: 15px;
   }
+  .div-cadre .note-image {
+    font-family: "Roboto" sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    text-align: left;
+  }
+  .div-cadre aside {
+    font-family: "Roboto" sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 19.92px;
+    text-align: left;
+  }
   .image-main {
     width: 100%;
     height: 200px;
@@ -220,18 +233,15 @@
     display: block;
     position: absolute;
     float: left;
-    top: 840px;
-  }
-  .image-Nouveau2 {
-    margin-right: 10px;
-    top: 840px;
+    top: 800px;
+    margin-left: 29vw;
   }
   .smenu-principal {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   .smenu {
     background-color: #EAEAEA;
@@ -241,7 +251,7 @@
     height: 28px;
     gap: 0px;
     opacity: 0px;
-    font-family: Roboto;
+    font-family: "Roboto" sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 28.13px;

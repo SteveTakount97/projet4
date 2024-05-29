@@ -9,3 +9,12 @@
     text-align: center;
     font-family: "roboto" sans-serif;
 }
+
+@mixin note-image{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.09px;
+text-align: left;
+color: black;
+}
