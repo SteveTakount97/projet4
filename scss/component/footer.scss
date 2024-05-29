@@ -1,0 +1,44 @@
+
+/*Configuration footer*/
+.image-foot{
+    width: 137,58px;
+    height: 27px;
+    font-style: italic;
+    size: 18px;
+    line-height: 26,24px;
+    filter: brightness(0) invert(1) hue-rotate(180deg); 
+    margin-top: 2px;
+    padding-top: 16px;
+  }
+
+footer{
+  position: absolute !important;
+  top: 2100px !important;
+  width: 100%;
+  background-color: #353535;
+  .pasdepage{
+    height: 186px;
+    color: white;
+    margin-top: 10px;
+  }
+     .blocfooter{
+       display: grid;
+       gap: 10px;
+       margin-left: 20px;
+    }
+  }
+  .image-footer{
+    float: left;
+    margin-right: 10px;
+
+  }
+dt{
+  margin-top: 5px;
+}
+a{
+  text-decoration: none;
+  color: initial;
+}
+.color_contact{
+color: #FFFFFF;
+}

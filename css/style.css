@@ -1,10 +1,9 @@
-/****** General ***********/
-@media all and (min-width: 723px) {
+@media all and (min-width: 1024px) {
   .loader {
     position: fixed;
     top: 0;
     left: 0;
-    width: 1440px;
+    width: 100%;
     height: 2px;
     background-color: #007bff;
     z-index: 9999;
@@ -33,11 +32,10 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .image_head {
+  .image-head {
     width: 200px;
     height: 96px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     display: block;
     margin: auto;
     padding-top: 20px;
@@ -76,13 +74,13 @@
     color: #000000;
     outline: none;
   }
-  .container_menu {
+  .container-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
   }
-  .container_menu h1 {
+  .container-menu h1 {
     text-align: center;
     height: 63px;
     font-family: "robot", sans-serif;
@@ -90,7 +88,7 @@
     color: #000000;
     font-size: 46px;
   }
-  .container_menu .titre_two {
+  .container-menu .titre-two {
     text-align: center;
     height: 46px;
     text-align: center;
@@ -101,7 +99,7 @@
     margin-bottom: 10px;
     padding: 10px;
   }
-  .container_menu .titre_tree {
+  .container-menu .titre-tree {
     width: 218px;
     height: 50px;
     text-align: center;
@@ -115,6 +113,9 @@
   }
   .button {
     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    height: 60px;
+    width: 218px;
+    margin-bottom: 40px;
     border-radius: 35px;
     border: 1px #FF79DA solid;
     color: white;
@@ -130,20 +131,22 @@
     margin: 0;
     overflow-x: hidden;
   }
-  .sous_titre_menu {
+  .sous-titre-menu, .title {
+    padding-top: 20px;
     font-size: 30px;
     line-height: 18px;
     font-weight: 700;
     width: 100%;
     margin-left: 180px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .title {
-    font-size: 30px;
-    line-height: 18px;
-    font-weight: 700;
-    margin-left: 180px;
+    margin-bottom: 30px;
+    padding-top: 50px;
   }
-  .menu_one {
+  .menu-one {
+    background-color: #FFFFFF;
     max-width: 1440px;
     height: 228px;
   }
@@ -156,7 +159,7 @@
     font-weight: 500;
     line-height: 28.13px;
   }
-  .image_menu {
+  .image-menu, .image-me {
     float: left;
     margin-left: 40px;
     padding-top: 20px;
@@ -164,22 +167,22 @@
     height: 24px;
     margin-right: 20px;
   }
-  .image_menu .image_m {
+  .image-menu .image-m, .image-me .image-m {
     width: 13.02px;
     height: 19.9px;
     opacity: 0px;
   }
-  .image_menu .image_mi {
+  .image-menu .image-mi, .image-me .image-mi {
     width: 16px;
     height: 15.92px;
   }
-  .image_menu .image_mo {
+  .image-menu .image-mo, .image-me .image-mo {
     Width: 18px;
     Height: 17.91px;
   }
-  .image_me {
-    float: left;
-    padding-top: 20px;
+  .image-me {
+    margin-left: 0;
+    margin-right: 0;
   }
   .cmenu {
     width: 25%;
@@ -190,28 +193,27 @@
     background-color: #F6F6F6;
     box-shadow: 2px 2px 2px 1px #cec7c7;
   }
-  .div_cadre {
+  .div-cadre {
     padding-bottom: 10px;
     width: 38%;
     background-color: #FFFFFF;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
   }
-  .div_cadre .sdiv_cadre {
+  .div-cadre .sdiv-cadre {
     margin-top: 10px;
+    padding-left: 15px;
   }
-  .imageM {
+  .image-main {
     width: 100%;
     height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .div-img-nouveau {
     max-width: 1440px;
   }
-  .image_Nouveau {
+  .image-Nouveau, .image-Nouveau2 {
     width: 80px;
     height: 29px;
     border-radius: 2px;
@@ -220,16 +222,11 @@
     float: left;
     top: 840px;
   }
-  .image_Nouveau2 {
-    width: 80px;
-    height: 29px;
-    border-radius: 2px;
-    display: block;
-    position: absolute;
+  .image-Nouveau2 {
     margin-right: 10px;
     top: 840px;
   }
-  .smenu_principal {
+  .smenu-principal {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -239,7 +236,7 @@
   .smenu {
     background-color: #EAEAEA;
   }
-  .smenu_one {
+  .smenu-one {
     width: 268.72px;
     height: 28px;
     gap: 0px;
@@ -250,7 +247,7 @@
     line-height: 28.13px;
     margin-left: 180px;
   }
-  .image_like {
+  .image-like {
     width: 22px;
     height: 21px;
     float: right;
@@ -258,7 +255,7 @@
     display: block;
     transition: filter 0.5s ease;
   }
-  .image_like:hover {
+  .image-like:hover {
     filter: hue-rotate(270deg);
   }
   footer {
@@ -267,11 +264,11 @@
     height: 114px;
     width: 100%;
   }
-  footer .pasdepage_c {
+  footer .pasdepage {
     display: flex;
     flex-direction: row;
   }
-  footer .bloc_footer {
+  footer .bloc-footer {
     width: 100%;
     display: flex;
     gap: 20px;
@@ -282,11 +279,11 @@
     order: 1;
     margin-right: 40px;
   }
-  footer .image_footer {
+  footer .image-footer {
     float: left;
     margin-right: 10px;
   }
-  footer .image_foot {
+  footer .image-foot {
     height: 20px;
     font-style: italic;
     size: 18px;

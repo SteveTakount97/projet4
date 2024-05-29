@@ -1,42 +1,14 @@
-/****** General ***********/
 
-@media all and (min-width: 723px){
-  .loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-   width: 1440px;
-    height: 2px; // Hauteur de la barre de progression
-    background-color: #007bff; // Couleur de la barre de progression
-    z-index: 9999; // Assure que le loader est au-dessus de tout le reste
-    opacity: 1;
-    transition: opacity 0.9s ease-in-out; // Transition pour une apparition en douceur
-  
-    &.hidden {
-      opacity: 0; // Cache le loader lorsque la classe 'hidden' est appliquée
-      pointer-events: none; // Empêche les interactions avec le contenu derrière le loader
-    }
-  
-    .loader-bar {
-      width: 0; // La largeur de la barre de progression commence à zéro
-      height: 4px; // Hauteur de la barre de progression
-      background-color: #007bff; // Couleur de la barre de progression
-      transition: width 1s ease-in-out; // Transition pour animer la progression
-      animation: loaderannimation 3s linear forwards;
-    }
-    @keyframes loaderannimation {
-      100%{
-        width: 100%;
-      }
-    }
-  }
+@media all and (min-width: 1024px){
+ @import "component/loader.scss";
+ 
   header{
     background-color: #FFFFFF;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
   }
-    .image_head{
+    .image-head{
         width: 200px;
         height: 96px;
         object-fit: cover;
@@ -78,7 +50,7 @@
      }
       }
     }
-    .container_menu{
+    .container-menu{
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -91,7 +63,7 @@
            color: #000000;
            font-size: 46px;
    }
-   .titre_two{
+   .titre-two{
    text-align: center;
      height: 46px;
    text-align: center;
@@ -102,7 +74,7 @@
    margin-bottom: 10px;
    padding: 10px;
    }
-   .titre_tree{
+   .titre-tree{
      width: 218px;
      height: 50px;
      text-align: center;
@@ -119,13 +91,13 @@
     
     //configuration du button
     
-    $button-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    $couleurPrincipale: #9356dc;
-    $couleurSurvol: lighten($couleurPrincipale, 10%); // Légèrement éclaircie
-    $ombreSurvol: 0 0 10px rgba(0, 0, 0, 0.5); // Ombre portée plus visible
+    @import "var/var.scss";
     
     .button{
     background-image: $button-color;
+    height: 60px;
+    width: 218px;
+    margin-bottom: 40px;
     border-radius: 35px;
     border: 1px #FF79DA solid;
     color: white;
@@ -144,21 +116,23 @@
               overflow-x: hidden;
          
          }
-    .sous_titre_menu{
+    .sous-titre-menu{
+      padding-top: 20px;
       font-size: 30px;
       line-height: 18px;
       font-weight: 700;
       width: 100%;
       margin-left: 180px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
     .title{
-      font-size: 30px;
-      line-height: 18px;
-      font-weight: 700;
-      margin-left: 180px;
+     @extend .sous-titre-menu;
+     margin-bottom: 30px;
+     padding-top: 50px;
     }
-    .menu_one {
-    
+    .menu-one {
+     background-color: #FFFFFF;
     max-width: 1440px;
     height: 228px;
     }
@@ -177,32 +151,33 @@
 
       
   }
-    .image_menu{
+    .image-menu{
         float: left;
         margin-left: 40px;
     padding-top: 20px;
     width: 24px;
         height: 24px;
         margin-right: 20px;
-        .image_m{
+        .image-m{
             width: 13.02px;
             height: 19.9px;
             opacity: 0px;
           }
-          .image_mi{
+          .image-mi{
             width: 16px;
             height: 15.92px;
           }
-          .image_mo{
+          .image-mo{
             Width: 18px;
             Height: 17.91px;
           }
         }
-        .image_me{
-            float: left;
-            padding-top: 20px;
-            
-          }
+        .image-me{
+          @extend .image-menu;
+          margin-left: 0;
+          margin-right: 0;
+          
+        }
      .cmenu{
            width: 25%;
            height: 6%;
@@ -213,17 +188,17 @@
             box-shadow: 2px 2px 2px 1px #cec7c7;
           }
  //config menu restaurant
- .div_cadre{
+ .div-cadre{
   padding-bottom: 10px;
   width: 38%;
   background-color: #FFFFFF;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  .sdiv_cadre{
+  border-radius: 20px;
+  .sdiv-cadre{
     margin-top: 10px;
+    padding-left: 15px;
   }
  }
- .imageM{
+ .image-main{
     width: 100%;
     height: 200px;
     border-top-left-radius: 20px;
@@ -234,7 +209,7 @@
 .div-img-nouveau{
   max-width: 1440px;
 }
-.image_Nouveau{
+.image-Nouveau{
   width: 80px;
   height: 29px;
   border-radius: 2px;
@@ -243,16 +218,12 @@ position: absolute;
 float: left;
 top: 840px;
 }
-.image_Nouveau2{
-width: 80px;
-height: 29px;
-border-radius: 2px;
-display: block;
-position: absolute;
+.image-Nouveau2{
+  @extend .image-Nouveau;
 margin-right: 10px;
 top: 840px;
 }
- .smenu_principal{
+ .smenu-principal{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -262,7 +233,7 @@ top: 840px;
 .smenu{
   background-color: #EAEAEA;
 }
-.smenu_one{
+.smenu-one{
     width: 268.72px;
 height: 28px;
 gap: 0px;
@@ -275,7 +246,7 @@ margin-left: 180px;
 
 }
 
-.image_like{
+.image-like{
     width: 22px;
     height: 21px;
     float: right;
@@ -295,11 +266,11 @@ margin-left: 180px;
     color: #F6F6F6;
     height: 114px;
     width: 100%;
-    .pasdepage_c{
+    .pasdepage{
       display: flex;
       flex-direction: row;
     }
-    .bloc_footer{
+    .bloc-footer{
       width: 100%;
       display: flex;
      gap: 20px;
@@ -310,11 +281,11 @@ margin-left: 180px;
       order: 1;
       margin-right: 40px;
     }
-    .image_footer{
+    .image-footer{
     float: left;
     margin-right: 10px;
   }
-  .image_foot{
+  .image-foot{
     height: 20px;
     font-style: italic;
     size: 18px;

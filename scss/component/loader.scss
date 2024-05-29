@@ -1,0 +1,29 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; // Hauteur de la barre de progression
+    background-color: #007bff; // Couleur de la barre de progression
+    z-index: 9999; // Assure que le loader est au-dessus de tout le reste
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out; // Transition pour une apparition en douceur
+  
+    &.hidden {
+      opacity: 0; // Cache le loader lorsque la classe 'hidden' est appliquée
+      pointer-events: none; // Empêche les interactions avec le contenu derrière le loader
+    }
+  
+    .loader-bar {
+      width: 0; // La largeur de la barre de progression commence à zéro
+      height: 4px; // Hauteur de la barre de progression
+      background-color: #007bff; // Couleur de la barre de progression
+      transition: width 1s ease-in-out; // Transition pour animer la progression
+      animation: loaderannimation 3s linear forwards;
+    }
+    @keyframes loaderannimation {
+      100%{
+        width: 100%;
+      }
+    }
+  }

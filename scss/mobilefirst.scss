@@ -2,9 +2,9 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+@import "utils/mixins.scss";
 
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 723px) {
   html{
     display: flex;
   }
@@ -56,7 +56,7 @@
     }
     .search{
       display: flex;
-      padding-left: 29%;
+      padding-left: 30%;
       padding-top: 8px;
       .search-icon{
         width: 14px;
@@ -78,66 +78,62 @@
       }
     }
    
-    .image_head{
+    .image-head{
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 63px;
+        height: auto;
         .img-head{
           width: 45vw;
-          height: 36px;
-           padding: 15px;
+          height: auto;
+           padding: 20px;
+           object-fit: cover;
         }
  }
-      .image_Nouveau{
-      width: 80px;
+      .image-Nouveau{
+      width: 20vw;
       height: 29px;
+      object-fit: cover;
       border-radius: 2px;
       display: block;
   position: absolute;
   margin-left: 70%; 
   
  }
- .image_Nouveau2{
-  width: 80px;
-  height: 29px;
-  border-radius: 2px;
-  display: block;
-position: absolute;
-margin-left: 70%; 
-top: 1150px;
+ .image-Nouveau2{
+  @extend .image-Nouveau;
+   top: 1298px;
 }
-.container_menu{
+.container-menu{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   gap: 10px;
+   gap: 20px;
+
    h1{
-  padding-left: 20%;
-  padding-right: 20%;
-    height: 63px;
+    margin-top: 30px;
+    margin-bottom: 0;
     font-family: "robot", sans-serif;
-    font-size: 24px;
+    font-size: 30px;
         font-weight: 700;
         color: #000000;
+        text-align: center;
 }
-.titre_two{
+.titre-two{
  width: 90%;
   height: 46px;
-text-align: center;
 line-height: 21.09px;
-font-family: "robot", sans-serif;
 font-size: 18px;
 font-weight: 300;
 color: #353535;
+@include text;
 margin-bottom: 10px;
 padding: 10px;
 }
-.titre_tree{
+.titre-tree{
   width: 218px;
   height: 40px;
-  font-family: "robot", sans-serif;
-  text-align: center;
+  @include text;
   size: 16px;
   font-weight: 500;
   line-height: 18.75px;
@@ -147,18 +143,17 @@ padding: 10px;
 .button-menu{
   display: flex;
   justify-content: center;
+  padding-bottom: 40px
 }
 
 //configuration du button
-
-$button-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-$couleurPrincipale: #9356dc;
-$couleurSurvol: lighten($couleurPrincipale, 10%); // Légèrement éclaircie
-$ombreSurvol: 0 0 10px rgba(0, 0, 0, 0.5); // Ombre portée plus visible
+@import  "var/var.scss";
 
 .button{
 background-image: $button-color;
 border-radius: 35px;
+height: 60px;
+width: 218px;
 border: 1px #FF79DA solid;
 color: white;
 transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
@@ -176,31 +171,31 @@ html, body{
          }
     }
 //configuration de laliste de menu
-    .menu_one{
+    .menu-one{
         height: 440px;
         background-color: #FFFFFF;
         margin-left: 0;
 
     }
     h2{
-      font-family: "robot", sans-serif;
-      font-size: 24px;
-        line-height: 28.13px;
-      text-align: left;
-        font-weight: 700;
-        color: #000000;
+        @extend h1;
+        text-align: left !important;
+        font-size: 24px !important;
         margin-left: 10px;
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .sous_titre_menu{
-      padding: 4px;
+    .sous-titre-menu{
+      padding-top: 50px;
       margin-left: 10px;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   
   .cmenu{
     border: 1px #F6F6F6 solid;
-    width: 80vw;
+    width: 90vw;
     height: 72.38px;
     border-radius: 20px;
     margin-left: 20px;
@@ -208,33 +203,35 @@ html, body{
     box-shadow: 2px 2px 2px 1px #cec7c7;
   }
   .menu{
-    display: grid;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+    justify-content: center;
   
   }
-  .menu_titre_one {
-   text-align: center;
+  .menu-titre-one {
+    text-align: center;
+    width: 80%;
   }
-  .image_menu{
+  .image-menu{
     float: left;
     margin-left: 40px;
     padding-top: 20px;
-    .image_m{
+    .image-m{
         width: 13.02px;
         height: 19.9px;
         opacity: 0px;
       }
-      .image_mi{
+      .image-mi{
         width: 16px;
         height: 15.92px;
       }
-      .image_mo{
+      .image-mo{
         Width: 18px;
         Height: 17.91px;
       }
     }
-  .image_num{
+  .image-num{
     width: 24px;
     height: 24px;
     position: relative;
@@ -252,7 +249,7 @@ html, body{
     width: 247px;
     height: 24px;
   }
-  .div_cadre{
+  .div-cadre{
     margin-left: 17px;
     background-color: #FFFFFF;
     width: 90%;
@@ -265,7 +262,7 @@ img {
   max-width: 100%; /* Empêche l'image de déborder de son conteneur */
   max-height: 100%;/* Permet à l'image de conserver ses proportions d'origine lorsqu'elle est redimensionnée */
 }
-  .imageM{
+  .image-main{
     width: 100% !important;
     height: 200px !important;
     border-top-left-radius: 15px;
@@ -273,7 +270,7 @@ img {
     object-fit: cover;
   }
   div{
-    .image_like{
+    .image-like{
     width: 22px;
     height: 21px;
     float: right;
@@ -282,52 +279,10 @@ img {
     top: 10px !important;
     }
   }
-  .smenu_principal{
-   display: flex;
-   flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-  .image_foot{
-    width: 137,58px;
-    height: 27px;
-    font-style: italic;
-    size: 18px;
-    line-height: 26,24px;
-    filter: brightness(0) invert(1) hue-rotate(180deg); 
-    margin-top: 2px;
-    padding-top: 16px;
-  }
-  footer{
-    position: absolute !important;
-    top: 2000px !important;
-    width: 100%;
-    background-color: #353535;
-    .pasdepage_c{
-      height: 186px;
-      color: white;
-      margin-top: 10px;
-    }
-       .bloc_footer{
-         display: grid;
-         gap: 10px;
-         margin-left: 20px;
-      }
-    }
-    .image_footer{
-      float: left;
-      margin-right: 10px;
-  
-    }
-  dt{
-    margin-top: 5px;
-  }
-  a{
-    text-decoration: none;
-    color: initial;
-  }
- .color_contact{
-  color: #FFFFFF;
- }
+  .smenu-principal{
+    @extend .container-menu;
+     width: 100%;
+   }
 
+  @import "component/footer.scss";
 }

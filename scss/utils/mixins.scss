@@ -1,0 +1,11 @@
+@mixin herder {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin text{
+    text-align: center;
+    font-family: "roboto" sans-serif;
+}
