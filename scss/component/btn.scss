@@ -1,0 +1,15 @@
+
+.button-menu{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px
+    }
+
+.button{
+    border-radius: 35px;
+    height: 60px;
+    width: 218px;
+    border: 1px #FF79DA solid;
+    color: white;
+    transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
+    }

@@ -10,13 +10,13 @@
     width: 100%;
     height: 63px;
   }
-  .image_head {
+  .img-head {
     width: 162px;
     height: 44px;
     display: block;
     margin: auto;
   }
-  .image_goback {
+  .image-goback {
     width: 30px;
     height: 30px;
     float: left;
@@ -57,7 +57,7 @@
     position: absolute;
     top: 283px;
   }
-  .image_like {
+  .image-like {
     width: 22px;
     height: 21px;
     float: right;
@@ -65,7 +65,7 @@
     position: absolute;
     top: 30px;
   }
-  .container_main {
+  .container-main {
     display: grid;
     grid-template-rows: 270px 270px 270px;
   }
@@ -81,15 +81,15 @@
     grid-template-rows: 69px 69px 69px;
     gap: 12px;
   }
-  .entree .entree_s, .plats .entree_s, .dessert .entree_s {
+  .entree .entree-s, .plats .entree-s, .dessert .entree-s {
     opacity: 0;
     transform: translateX(-10px);
     animation: slideIn 0.9s ease-in-out forwards;
   }
-  .entree .entree_s:nth-child(2), .plats .entree_s:nth-child(2), .dessert .entree_s:nth-child(2) {
+  .entree .entree-s:nth-child(2), .plats .entree-s:nth-child(2), .dessert .entree-s:nth-child(2) {
     animation-delay: 1s;
   }
-  .entree .entree_s:nth-child(3), .plats .entree_s:nth-child(3), .dessert .entree_s:nth-child(3) {
+  .entree .entree-s:nth-child(3), .plats .entree-s:nth-child(3), .dessert .entree-s:nth-child(3) {
     animation-delay: 2s;
   }
   @keyframes slideIn {
@@ -106,7 +106,7 @@
   .select-button {
     display: none;
   }
-  .entree_s {
+  .entree-s {
     background-color: #FFFFFF;
     width: 90%;
     border-radius: 20px;
@@ -153,21 +153,21 @@
     display: flex;
     justify-content: center;
   }
-  .button_commander {
+  .button-commander {
     width: 186px;
     height: 50px;
     border-radius: 25px;
     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     color: #FFFFFF;
     position: absolute;
-    bottom: 250px;
+    bottom: 150px;
     transition: background-image 0.3s, box-shadow 0.3s;
   }
-  .button_commander:hover {
+  .button-commander:hover {
     background-color: #ae80e5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-  .button_commander .button {
+  .button-commander .button {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -180,7 +180,7 @@
     text-decoration: none;
     color: initial;
   }
-  .color_contact {
+  .color-contact {
     color: #FFFFFF;
   }
   ul {
@@ -189,7 +189,18 @@
   ul a {
     color: #FFFFFF;
   }
-  .image_foot {
+  .image-foot {
+    width: 137, 58px;
+    height: 27px;
+    font-style: italic;
+    size: 18px;
+    line-height: 26, 24px;
+    filter: brightness(0) invert(1) hue-rotate(180deg);
+    margin-top: 2px;
+    padding-top: 16px;
+  }
+  /*Configuration footer*/
+  .image-foot {
     width: 137, 58px;
     height: 27px;
     font-style: italic;
@@ -201,22 +212,21 @@
   }
   footer {
     position: absolute !important;
-    top: 1390px !important;
+    top: 2200px;
     width: 100%;
     background-color: #353535;
   }
-  footer .pasdepage_c {
+  footer .pasdepage {
     height: 186px;
     color: white;
     margin-top: 10px;
   }
-  footer .bloc_footer {
+  footer .bloc-footer {
     display: grid;
     gap: 10px;
-    margin-left: 0px;
-    padding-left: 25px;
+    margin-left: 20px;
   }
-  .image_footer {
+  .image-footer {
     float: left;
     margin-right: 10px;
   }
@@ -227,8 +237,11 @@
     text-decoration: none;
     color: initial;
   }
-  .color_contact {
+  .color-contact {
     color: #FFFFFF;
+  }
+  footer {
+    top: 1500px;
   }
 }
 @media all and (min-width: 1024px) {

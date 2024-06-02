@@ -11,10 +11,31 @@
 }
 
 @mixin note-image{
-    font-family: Roboto;
-font-size: 18px;
-font-weight: 700;
-line-height: 21.09px;
-text-align: left;
-color: black;
+   font-family: "Roboto" sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 21.09px;
+   text-align: left;
+   color: black;
+}
+
+@mixin image-nouveau{
+    width: 6vw;
+  height: 29px;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  float: left;
+  top: 830px;
+  margin-left: 30%;
+  object-fit: cover;
+}
+@mixin image-n2{
+    width: 20vw;
+      height: 29px;
+      object-fit: cover;
+      border-radius: 2px;
+      display: block;
+     position: absolute;
+     margin-left: 70%; 
 }

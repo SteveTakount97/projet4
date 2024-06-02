@@ -3,120 +3,19 @@
 
   @import "utils/mixins.scss";
  @import "component/loader.scss";
-
-  header{
-    background-color: #FFFFFF;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+  .loader{
+    max-width: 1440px;
   }
-    .image-head{
-        width: 200px;
-        height: 96px;
-        object-fit: cover;
-     display: block;
-    padding-top: 20px;
-    }
-    ul{
-      list-style-type: none;
-        a{
-          color: #FFFFFF;
-        }
-    }
-    .introduction{
-      background-color: #EAEAEA;
-      height: 50px;
-      width: 100%;
-    }
-    .search{
-      display: flex;
-      padding-left: 45%;
-      padding-top: 8px;
-      .search-icon{
-        width: 14px;
-        height: 20px;
-      }
-      .search-text{
-        height: 24px;
-      input{
-        width: 110px;
-        border: none;
-       background-color: #EAEAEA;
-       padding-left: 15px;
-       font-family: "Roboto" sans-serif;
-       font-size: 16px;
-       font-weight: 700;
-       color: #000000;
-       outline: none;
      }
-      }
-    }
-    .container-menu{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 10px;
-      h1{
-       text-align: center;
-       height: 63px;
-       font-family: "robot", sans-serif;
-           font-weight: 700;
-           color: #000000;
-           font-size: 46px;
-   }
-   .titre-two{
-   text-align: center;
-     height: 46px;
-   text-align: center;
-   line-height: 21.09px;
-   font-size: 22px;
-   font-weight: 300;
-   color: #353535;
-   margin-bottom: 10px;
-   padding: 10px;
-   }
-   .titre-tree{
-     width: 218px;
-     height: 50px;
-     text-align: center;
-     size: 16px;
-     font-weight: 500;
-     line-height: 18.75px;
-   
-   }
-   }
-    .button-menu{
-      display: flex;
-      justify-content: center;
-    }
-    
-    //configuration du button
-    
-    @import "var/var.scss";
-    
-    .button{
-    background-image: $button-color;
-    height: 60px;
-    width: 218px;
-    margin-bottom: 40px;
-    border-radius: 35px;
-    border: 1px #FF79DA solid;
-    color: white;
-    transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
-       
-     &:hover {
-      background-color: $couleurSurvol;
-      box-shadow: $ombreSurvol;
-  }
-
-     }
-     html, body{
+     html{ body{
               background-color: rgb(247, 248, 248);
               max-width: 1440px;
-              margin: 0;
-              overflow-x: hidden;
-         
+              margin: 0;         
          }
+        }
+    h2{
+      text-align: left;
+    }
     .sous-titre-menu{
       padding-top: 20px;
       font-size: 30px;
@@ -204,8 +103,6 @@
     font-weight: 700;
     line-height: 21.09px;
     text-align: left;
-    
-
    }
    aside{
     font-family: "Roboto" sans-serif;
@@ -228,14 +125,15 @@
   max-width: 1440px;
 }
 .image-Nouveau{
-  width: 80px;
+  width: 6vw;
   height: 29px;
   border-radius: 2px;
   display: block;
-position: absolute;
-float: left;
-top: 800px;
-margin-left: 29vw;
+  position: absolute;
+  float: left;
+  top: 800px;
+  margin-left: 30%;
+  object-fit: cover;
 }
 .image-Nouveau2{
   @extend .image-Nouveau;
@@ -321,5 +219,3 @@ a{
 color: #FFFFFF;
 }
 
-
-}
