@@ -20,22 +20,17 @@
 }
 
 @mixin image-nouveau{
-    width: 6vw;
-  height: 29px;
-  border-radius: 2px;
-  display: block;
-  position: absolute;
-  float: left;
-  top: 830px;
-  margin-left: 30%;
-  object-fit: cover;
+  width: 20vw;
+    height: 29px;
+    object-fit: cover;
+    border-radius: 2px;
+    display: block;
+   position: absolute;
+   margin-left: 70%; 
 }
 @mixin image-n2{
-    width: 20vw;
-      height: 29px;
       object-fit: cover;
       border-radius: 2px;
       display: block;
      position: absolute;
-     margin-left: 70%; 
 }

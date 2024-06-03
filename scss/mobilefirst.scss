@@ -7,6 +7,9 @@
 @import "utils/mixins.scss";
 
 @import "component/loader.scss";
+.loader{
+  max-width: 1440px;
+}
 
 //configuration du button
 @import  "var/var.scss";
@@ -21,10 +24,12 @@ background-image: $button-color;
 }
 }
 h1{
-  font-size: 46px !important;
+  font-size: 46px;
 }
 .titre-two{
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 html{ body{
   background-color: rgb(247, 248, 248);
@@ -36,6 +41,10 @@ html{ body{
 @import "layout/main-phone.scss";
 
 @media all and (min-width: 1024px){
+  .search{
+    margin-left: 15%;
+  }
+ 
 .menu{
   flex-direction: row;
 }
@@ -44,13 +53,17 @@ html{ body{
   max-width: 1440px;
  
 }
+
+.smenu-principal{
+  max-width: 1440px;
+}
 .sous-titre-menu{
   padding-top: 20px;
   font-size: 30px;
   line-height: 18px;
   font-weight: 700;
   width: 100%;
-  margin-left: 12vw;
+  margin-left: 12%;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -75,6 +88,7 @@ h3{
   gap: 30px;
   justify-content: center;
   padding-bottom: 40px;
+  max-width: 1440px;
 }
  //config menu restaurant
  .div-cadre{
@@ -85,9 +99,9 @@ h3{
   .sdiv-cadre{
     margin-top: 10px;
     padding-left: 15px;
+    cursor: pointer;
   }
   .note-image{
-    font-family: "Roboto" sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.09px;
@@ -101,20 +115,43 @@ h3{
    text-align: left;
    }
    .image-Nouveau{
-    width: 6vw;
-    height: 29px;
     border-radius: 2px;
     display: block;
     position: absolute;
-    float: left;
-    top: 830px;
-    margin-left: 30%;
+    float: right;
     object-fit: cover;
  }
  .image-Nouveau2{
-  @include image-nouveau;
+  @include image-n2;
  }
  }
+ 
+ .ft{
+  background: black;
+  color: transparent;
+  background-clip: text;
+  transition: background-size 2s ease;
+  display: inline-block;
+
+    &:hover{
+      background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+      background-size: 100% 0%;
+      background-clip: text;
+      font-weight: 900;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      animation: animationheart 2s linear;
+    }
+ }
+ @keyframes animationheart {
+  0%{ 
+    background-size: 100% 0%;
+  } 
+  100%{
+    background-size: 100% 100%;
+  }
+ }
+
  //configuration footer
  footer{
   background-color: #353535;
@@ -155,14 +192,13 @@ text-decoration: none;
 color: initial;
 
 }
-.color_contact{
+.color-contact{
 color: #FFFFFF;
 }
 
-
-
-
 }
+
+
 @media screen and (max-width: 723px) {
   html{
     display: flex;
@@ -173,9 +209,13 @@ html, body{
         width: 100%;
     }
     @import "layout/explore.scss";
-
+h1{
+  font-size: 30px;
+  width: 90%;
+}
 .titre-two{
   @include text;
+  width: 90%;
 }
 .titre-tree{
  @include text;
@@ -191,8 +231,7 @@ html, body{
      margin-left: 70%; 
   }
    .image-Nouveau2{
-     @include image-n2;
-  top: 1298px;
+    @include image-nouveau
    }
 
   .smenu-principal{

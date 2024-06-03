@@ -32,6 +32,10 @@
   }
 }
 
+.loader {
+  max-width: 1440px;
+}
+
 .button-menu {
   display: flex;
   justify-content: center;
@@ -56,11 +60,13 @@
 }
 
 h1 {
-  font-size: 46px !important;
+  font-size: 46px;
 }
 
 .titre-two {
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 html body {
@@ -145,14 +151,12 @@ html body {
 }
 
 .sdiv-cadre .note-image {
-  font-family: "Roboto" sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.09px;
   text-align: left;
 }
 .sdiv-cadre aside {
-  font-family: "robot", sans-serif;
   font-weight: 300;
   size: 17px;
   line-height: 19.9px;
@@ -177,20 +181,23 @@ img {
 }
 
 div .image-like {
-  width: 22px;
-  height: 21px;
   float: right;
-  right: 40px;
+  right: 20px;
   position: relative;
-  top: 10px;
 }
 
 @media all and (min-width: 1024px) {
+  .search {
+    margin-left: 15%;
+  }
   .menu {
     flex-direction: row;
   }
   .menu-one {
     height: 230px;
+    max-width: 1440px;
+  }
+  .smenu-principal {
     max-width: 1440px;
   }
   .sous-titre-menu {
@@ -199,7 +206,7 @@ div .image-like {
     line-height: 18px;
     font-weight: 700;
     width: 100%;
-    margin-left: 12vw;
+    margin-left: 12%;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -224,6 +231,7 @@ div .image-like {
     gap: 30px;
     justify-content: center;
     padding-bottom: 40px;
+    max-width: 1440px;
   }
   .div-cadre {
     padding-bottom: 10px;
@@ -234,9 +242,9 @@ div .image-like {
   .div-cadre .sdiv-cadre {
     margin-top: 10px;
     padding-left: 15px;
+    cursor: pointer;
   }
   .div-cadre .note-image {
-    font-family: "Roboto" sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.09px;
@@ -250,26 +258,41 @@ div .image-like {
     text-align: left;
   }
   .div-cadre .image-Nouveau {
-    width: 6vw;
-    height: 29px;
     border-radius: 2px;
     display: block;
     position: absolute;
-    float: left;
-    top: 830px;
-    margin-left: 30%;
+    float: right;
     object-fit: cover;
   }
   .div-cadre .image-Nouveau2 {
-    width: 6vw;
-    height: 29px;
+    object-fit: cover;
     border-radius: 2px;
     display: block;
     position: absolute;
-    float: left;
-    top: 830px;
-    margin-left: 30%;
-    object-fit: cover;
+  }
+  .ft {
+    background: black;
+    color: transparent;
+    background-clip: text;
+    transition: background-size 2s ease;
+    display: inline-block;
+  }
+  .ft:hover {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-size: 100% 0%;
+    background-clip: text;
+    font-weight: 900;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    animation: animationheart 2s linear;
+  }
+  @keyframes animationheart {
+    0% {
+      background-size: 100% 0%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
   }
   footer {
     background-color: #353535;
@@ -308,7 +331,7 @@ div .image-like {
     text-decoration: none;
     color: initial;
   }
-  .color_contact {
+  .color-contact {
     color: #FFFFFF;
   }
 }
@@ -367,7 +390,7 @@ div .image-like {
     height: auto;
   }
   .image-head .img-head {
-    width: 45vw;
+    width: 200px;
     height: auto;
     padding: 20px;
     object-fit: cover;
@@ -381,14 +404,11 @@ div .image-like {
   .container-menu h1 {
     margin-top: 30px;
     margin-bottom: 0;
-    font-family: "robot", sans-serif;
-    font-size: 30px;
     font-weight: 700;
     color: #000000;
     text-align: center;
   }
   .container-menu .titre-two {
-    width: 90%;
     height: 46px;
     line-height: 21.09px;
     font-size: 18px;
@@ -404,9 +424,14 @@ div .image-like {
     font-weight: 500;
     line-height: 18.75px;
   }
+  h1 {
+    font-size: 30px;
+    width: 90%;
+  }
   .titre-two {
     text-align: center;
     font-family: "roboto" sans-serif;
+    width: 90%;
   }
   .titre-tree {
     text-align: center;
@@ -429,7 +454,6 @@ div .image-like {
     display: block;
     position: absolute;
     margin-left: 70%;
-    top: 1298px;
   }
   .smenu-principal {
     display: flex;
@@ -451,7 +475,7 @@ div .image-like {
   }
   footer {
     position: absolute !important;
-    top: 2200px !important;
+    top: 2200px;
     width: 100%;
     background-color: #353535;
   }
@@ -528,7 +552,7 @@ div .image-like {
     height: auto;
   }
   .image-head .img-head {
-    width: 45vw;
+    width: 200px;
     height: auto;
     padding: 20px;
     object-fit: cover;
@@ -542,14 +566,11 @@ div .image-like {
   .container-menu h1 {
     margin-top: 30px;
     margin-bottom: 0;
-    font-family: "robot", sans-serif;
-    font-size: 30px;
     font-weight: 700;
     color: #000000;
     text-align: center;
   }
   .container-menu .titre-two {
-    width: 90%;
     height: 46px;
     line-height: 21.09px;
     font-size: 18px;
