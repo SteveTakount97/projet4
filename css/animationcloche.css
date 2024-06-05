@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*animation clôche*/
+.entree-s {
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.entree-s__header {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+.entree-s__title {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.entree-s__description {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 15.04px;
+  font-weight: 300;
+  line-height: 17.63px;
+}
+.entree-s__price {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+}
+.entree-s__confirmation {
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.entree-s:hover .entree-s__confirmation {
+  margin-right: -1rem;
+}
+.entree-s__wrapIcon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.entree-s:hover .entree-s__wrapIcon {
+  transform: rotate(0);
+}
+.entree-s__icon {
+  color: #99e2d0;
+}
+
+/*fin animation*//*# sourceMappingURL=animationcloche.css.map */

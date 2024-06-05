@@ -36,12 +36,12 @@
 }
 
 .menu-titre-one {
-  text-align: center;
+  padding-left: 6%;
 }
 
 .image-menu {
   float: left;
-  margin-left: 40px;
+  margin-left: 15px;
   padding-top: 20px;
 }
 .image-menu .image-m {
