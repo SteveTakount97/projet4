@@ -37,6 +37,14 @@ html{ body{
   margin: 0;         
 }
 }
+h3{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.13px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 //configuration de laliste de menu
 @import "layout/main-phone.scss";
 
@@ -76,14 +84,6 @@ html{ body{
 .cmenu{
   width: 24%;
   height: 6%;
-}
-h3{
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 28.13px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .smenu-principal{
   display: flex;
@@ -215,7 +215,12 @@ color: #FFFFFF;
   html{
     display: flex;
   }
-  
+  .menu-titre-one{
+    padding-left: 4%!important;
+  }
+  .image-menu{
+    margin-left: 5% !important;
+  }
 html, body{
          background-color: rgb(247, 248, 248);
         width: 100%;
