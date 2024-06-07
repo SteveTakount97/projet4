@@ -95,6 +95,7 @@ h1 {
   background-clip: text;
   transition: background-size 2s ease;
   display: inline-block;
+  border: 2px solid transparent; /* Add border */
 }
 .ft:hover {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);

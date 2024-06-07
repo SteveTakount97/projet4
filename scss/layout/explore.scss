@@ -14,11 +14,14 @@ ul{
   background-color: #EAEAEA;
   height: 50px;
   width: 100%;
+  position: relative;
 }
 .search{
   display: flex;
-  padding-left: 30%;
+  justify-content: center;
   padding-top: 8px;
+  position: relative;
+
   .search-icon{
     width: 14px;
     height: 20px;

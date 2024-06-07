@@ -31,7 +31,8 @@
 @mixin image-n2{
       object-fit: cover;
       border-radius: 2px;
-      display: block;
+     width: 18%;
      position: absolute;
-     margin-left: 30%;
+     top: 15px;
+     margin-left: 80%;
 }
