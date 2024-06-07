@@ -1,28 +1,84 @@
 .loader {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 2px; // Hauteur de la barre de progression
-    background-color: #007bff; // Couleur de la barre de progression
-    z-index: 9999; // Assure que le loader est au-dessus de tout le reste
-    opacity: 1;
-    transition: opacity 0.9s ease-in-out; // Transition pour une apparition en douceur
-  
-    &.hidden {
-      opacity: 0; // Cache le loader lorsque la classe 'hidden' est appliquée
-      pointer-events: none; // Empêche les interactions avec le contenu derrière le loader
-    }
-  
-    .loader-bar {
-      width: 0; // La largeur de la barre de progression commence à zéro
-      height: 4px; // Hauteur de la barre de progression
-      background-color: #007bff; // Couleur de la barre de progression
-      transition: width 1s ease-in-out; // Transition pour animer la progression
-      animation: loaderannimation 3s linear forwards;
-    }
-    @keyframes loaderannimation {
-      100%{
-        width: 100%;
-      }
-    }
+  /* Positionnement du loader */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+ 
+
+  /* Fond semi-transparent du loader */
+  &-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
   }
+
+  /* Conteneur de la barre de progression */
+  .progress-bar-container {
+      position: relative;
+      width: 80%;
+      height: 30px;
+      background-color: transparent;
+      border-radius: 15px;
+      overflow: hidden;
+      z-index: 1001;
+  }
+
+  /* Barre de progression */
+  .progress-bar {
+      position: absolute;
+      height: 100%;
+      width: 0; /* La largeur de la barre de progression est animée */
+      background-color: #FF79DA;
+      animation: load 3s linear forwards, hideLoader 1s 3s forwards; /* Animation de chargement et de disparition du loader */
+  }
+}
+
+/* Animation de chargement */
+@keyframes load {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+/* Animation de disparition du loader */
+@keyframes hideLoader {
+  to {
+      opacity: 0;
+     
+
+  }
+}
+
+/* Contenu de la page */
+.page-content{
+  opacity: 0.5; // Le contenu est initialement invisible
+  filter: blur(5px); // Le contenu est initialement flou
+  animation: contenuAnimation 500ms ease 3s forwards; // Animation pour rendre le contenu visible et net
+}
+
+@keyframes contenuAnimation {
+  0% {
+    opacity: 0.5; // Le contenu est invisible au début de l'animation
+    filter: blur(5px); // Le contenu est flou au début de l'animation
+  }
+  25% {
+    opacity: 0.5; // Le contenu reste quasi-invisible pendant 25% de l'animation
+    filter: blur(5px); // Le contenu reste flou pendant 25% de l'animation
+  }
+  100% {
+    opacity: 1; // Le contenu devient visible à 100% de l'animation
+    filter: blur(0); // Le contenu devient net à 100% de l'animation
+  }
+}
