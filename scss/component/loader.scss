@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 9999;
  
 
   /* Fond semi-transparent du loader */
@@ -24,11 +24,10 @@
   /* Conteneur de la barre de progression */
   .progress-bar-container {
       position: relative;
-      width: 80%;
+      width: 50%;
       height: 30px;
       background-color: transparent;
       border-radius: 15px;
-      overflow: hidden;
       z-index: 1001;
   }
 
@@ -56,8 +55,6 @@
 @keyframes hideLoader {
   to {
       opacity: 0;
-     
-
   }
 }
 
