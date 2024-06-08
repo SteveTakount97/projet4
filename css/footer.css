@@ -11,13 +11,11 @@
 }
 
 footer {
-  position: absolute !important;
-  top: 2200px;
+  margin-top: 50px;
   width: 100%;
   background-color: #353535;
 }
 footer .pasdepage {
-  height: 186px;
   color: white;
   margin-top: 10px;
 }

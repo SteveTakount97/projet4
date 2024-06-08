@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  pointer-events: none;
   /* Fond semi-transparent du loader */
   /* Conteneur de la barre de progression */
   /* Barre de progression */
@@ -90,6 +91,8 @@
   width: 218px;
   border: 1px #FF79DA solid;
   color: white;
+  cursor: pointer;
+  transition: filter 0.3s ease; /* Transition douce pour l'effet de survol */
   transition: background-image 0.3s, box-shadow 0.3s;
 }
 
@@ -164,6 +167,7 @@ ul a {
   font-weight: 700;
   color: #000000;
   text-align: center;
+  width: 100%;
 }
 .container-menu .titre-two {
   height: 46px;
@@ -172,7 +176,8 @@ ul a {
   font-weight: 300;
   color: #353535;
   margin-bottom: 10px;
-  padding: 10px;
+  width: 100%;
+  text-align: center;
 }
 .container-menu .titre-tree {
   width: 218px;
@@ -184,14 +189,14 @@ ul a {
 
 .button {
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  /*Augmente la luminosité du bouton de 20% lorsqu'il est survolé.*/
 }
 .button:hover {
   background-color: #ae80e5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-h1 {
-  font-size: 46px;
+.button:hover {
+  filter: brightness(1.2); /* Éclaircir le bouton au survol */
 }
 
 .titre-two {
@@ -289,6 +294,7 @@ h3 {
   margin-left: 17px;
   background-color: #FFFFFF;
   width: 90%;
+  position: relative;
 }
 
 .sdiv-cadre .note-image {
@@ -327,183 +333,204 @@ div .image-like {
   position: relative;
 }
 
-@media screen and (max-width: 723px) {
-  html {
-    display: flex;
-  }
-  .menu-titre-one {
-    padding-left: 4% !important;
-  }
-  .image-menu {
-    margin-left: 5% !important;
-  }
-  html, body {
-    background-color: rgb(247, 248, 248);
-    width: 100%;
-  }
-  header {
-    background-color: #FFFFFF;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  ul {
-    list-style-type: none;
-  }
-  ul a {
-    color: #FFFFFF;
-  }
-  .introduction {
-    background-color: #EAEAEA;
-    height: 50px;
-    width: 100%;
-    position: relative;
-  }
-  .search {
-    display: flex;
-    justify-content: center;
-    padding-top: 8px;
-    position: relative;
-  }
-  .search .search-icon {
-    width: 14px;
-    height: 20px;
-  }
-  .search .search-text {
-    height: 24px;
-  }
-  .search .search-text input {
-    width: 110px;
-    border: none;
-    background-color: #EAEAEA;
-    padding-left: 15px;
-    font-family: "Roboto" sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: #000000;
-    outline: none;
-  }
-  .image-head {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-  }
-  .image-head .img-head {
-    width: 200px;
-    height: auto;
-    padding: 20px;
-    object-fit: cover;
-  }
-  .container-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-  }
-  .container-menu h1 {
-    margin-top: 30px;
-    margin-bottom: 0;
-    font-weight: 700;
-    color: #000000;
-    text-align: center;
-  }
-  .container-menu .titre-two {
-    height: 46px;
-    line-height: 21.09px;
-    font-size: 18px;
-    font-weight: 300;
-    color: #353535;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-  .container-menu .titre-tree {
-    width: 218px;
-    height: 40px;
-    size: 16px;
-    font-weight: 500;
-    line-height: 18.75px;
-  }
-  h1 {
-    font-size: 30px;
-    width: 90%;
-  }
-  .titre-two {
-    text-align: center;
-    font-family: "roboto" sans-serif;
-    width: 90%;
-  }
-  .titre-tree {
-    text-align: center;
-    font-family: "roboto" sans-serif;
-  }
-  .image-Nouveau {
-    width: 20vw;
-    height: 29px;
-    object-fit: cover;
-    border-radius: 2px;
-    display: block;
-    position: absolute;
-    margin-left: 70%;
-  }
-  .image-Nouveau2 {
-    width: 20vw;
-    height: 29px;
-    object-fit: cover;
-    border-radius: 2px;
-    display: block;
-    position: absolute;
-    margin-left: 70%;
-  }
-  .smenu-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-  }
-  /*Configuration footer*/
-  .image-foot {
-    width: 137, 58px;
-    height: 27px;
-    font-style: italic;
-    size: 18px;
-    line-height: 26, 24px;
-    filter: brightness(0) invert(1) hue-rotate(180deg);
-    margin-top: 2px;
-    padding-top: 16px;
-  }
-  footer {
-    position: absolute !important;
-    top: 2200px;
-    width: 100%;
-    background-color: #353535;
-  }
-  footer .pasdepage {
-    height: 186px;
-    color: white;
-    margin-top: 10px;
-  }
-  footer .bloc-footer {
-    display: grid;
-    gap: 10px;
-    margin-left: 20px;
-  }
-  .image-footer {
-    float: left;
-    margin-right: 10px;
-  }
-  dt {
-    margin-top: 5px;
-  }
-  a {
-    text-decoration: none;
-    color: initial;
-  }
-  .color-contact {
-    color: #FFFFFF;
-  }
+html {
+  display: flex;
 }
+
+.menu-titre-one {
+  padding-left: 4% !important;
+}
+
+.image-menu {
+  margin-left: 5% !important;
+}
+
+html, body {
+  background-color: rgb(247, 248, 248);
+  width: 100%;
+}
+
+header {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+ul a {
+  color: #FFFFFF;
+}
+
+.introduction {
+  background-color: #EAEAEA;
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  position: relative;
+}
+.search .search-icon {
+  width: 14px;
+  height: 20px;
+}
+.search .search-text {
+  height: 24px;
+}
+.search .search-text input {
+  width: 110px;
+  border: none;
+  background-color: #EAEAEA;
+  padding-left: 15px;
+  font-family: "Roboto" sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  outline: none;
+}
+
+.image-head {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.image-head .img-head {
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  object-fit: cover;
+}
+
+.container-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.container-menu h1 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+}
+.container-menu .titre-two {
+  height: 46px;
+  line-height: 21.09px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #353535;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.container-menu .titre-tree {
+  width: 218px;
+  height: 40px;
+  size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+}
+
+h1 {
+  font-size: 30px;
+  width: 90%;
+}
+
+.titre-two {
+  text-align: center;
+  font-family: "roboto" sans-serif;
+}
+
+.titre-tree {
+  text-align: center;
+  font-family: "roboto" sans-serif;
+}
+
+.image-Nouveau {
+  width: 20vw;
+  height: 29px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  margin-left: 75%;
+}
+
+.image-Nouveau2 {
+  width: 20vw;
+  height: 29px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  margin-left: 75%;
+}
+
+.smenu-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/*Configuration footer*/
+.image-foot {
+  width: 137, 58px;
+  height: 27px;
+  font-style: italic;
+  size: 18px;
+  line-height: 26, 24px;
+  filter: brightness(0) invert(1) hue-rotate(180deg);
+  margin-top: 2px;
+  padding-top: 16px;
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #353535;
+}
+footer .pasdepage {
+  color: white;
+  margin-top: 10px;
+}
+footer .bloc-footer {
+  display: grid;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.image-footer {
+  float: left;
+  margin-right: 10px;
+}
+
+dt {
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.color-contact {
+  color: #FFFFFF;
+}
+
 @media all and (min-width: 1024px) {
   .menu {
     flex-direction: row;
@@ -512,8 +539,13 @@ div .image-like {
     height: 230px;
     max-width: 1440px;
   }
+  h1 {
+    font-size: 46px;
+    width: 100%;
+  }
   .smenu-principal {
     max-width: 1440px;
+    flex-direction: row;
   }
   .sous-titre-menu {
     padding-top: 20px;
@@ -635,6 +667,7 @@ div .image-like {
   footer .img-first {
     order: 1;
     margin-right: 40px;
+    margin-top: -20px;
   }
   footer .image-footer {
     float: left;
