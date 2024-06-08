@@ -4,6 +4,11 @@
 * {
     font-family: "Roboto", sans-serif;
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
   @import "var/var.scss";
 
   header{
@@ -33,12 +38,14 @@ object-fit: cover;
   // configuration du body
   html, body{
     width: 100%;
-    background-color: #F6F6F6;
     margin: 0;
+    background-color: #F6F6F6;
     overflow-x: hidden;
 }
 .contain-main{
   padding: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 hr{
   border: none;
@@ -168,8 +175,6 @@ margin-top: 0;
   
   .button-commander{
   background-image: $button-color;
-  position: relative;
-   top: 60px;
   /*Augmente la luminosité du bouton de 20% lorsqu'il est survolé.*/
 
     &:hover {
@@ -227,25 +232,26 @@ margin-top: 0;
   @media all and (min-width: 1024px){
     .menudujour{
       width: 70%;
-      height: auto;
-      background-color: #F6F6F6;
       border: none;
       border-top-left-radius: 35px;
       border-top-right-radius: 35px;
-     position: relative;
-     bottom: 70px;
-     top: auto;
-     margin-left: 15%;
+      display: flex;
+      background-color: #F6F6F6;
+      margin: auto;
+     .contain-main{
+      width: 100%;
      }
+    }
+    h1{
+      text-align: center;
+    }
+    .image-like{
+      right: 25%;
+    }
     
-     .button-commander{
-      position: relative;
-      bottom: -100px;
-     }
-
-     main{
-      height: 1580px;
-     }
+    body{
+      background-color: #FFFFFF;
+    }
  //configuration footer
  ul{
   list-style-type: none;

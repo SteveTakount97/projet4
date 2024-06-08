@@ -75,6 +75,9 @@
   position: relative;
 }
 
+.sdiv-cadre {
+  padding: 15px;
+}
 .sdiv-cadre .note-image {
   font-size: 18px;
   font-weight: 700;
@@ -88,6 +91,7 @@
   color: #000000;
   width: 247px;
   height: 24px;
+  padding-top: 5px;
 }
 
 /* Réinitialisation CSS */
