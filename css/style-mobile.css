@@ -14,8 +14,7 @@ header {
   background-color: #FFFFFF;
   margin-left: 0;
   width: 100%;
-  height: 63px;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .img-head {
@@ -68,7 +67,7 @@ h1 {
   height: 27px;
   margin-left: 17px;
   padding-top: 25px;
-  margin-bottom: 0;
+  padding-bottom: 50px;
   margin-top: 0;
 }
 
@@ -79,7 +78,8 @@ h1 {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   position: relative;
-  bottom: 50px;
+  top: -50px;
+  margin-bottom: -50px !important;
 }
 
 .image-like {
@@ -380,6 +380,9 @@ a {
   }
   .menudujour .contain-main {
     width: 100%;
+  }
+  .button-menu {
+    padding-bottom: 25px;
   }
   h1 {
     text-align: center;
