@@ -11,6 +11,7 @@
     margin-left: 0;
     width: 100%;
     height: 63px;
+    padding-top: 20px;
 }
 .img-head{
     width: 162px;
@@ -67,8 +68,8 @@ margin-top: 0;
     border: none;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    position: absolute;
-    top: 283px;
+    position: relative;
+    bottom: 50px;
    }
   .image-like{
     
@@ -160,21 +161,22 @@ margin-top: 0;
   margin-top: 7px;
   }
 
-  .div-button{
-    display: flex;
-  justify-content: center;
-  }
+
+  /*configuration button*/
+
+  @import "component/btn.scss";
+  
   .button-commander{
-    width: 186px;
-  height: 50px;
-  border-radius: 25px;
   background-image: $button-color;
-  color: #FFFFFF;
-  position: absolute;
-  bottom: -150px;
-  transition: background-image 0.3s, box-shadow 0.3s; // Transition animée
-         
-  &:hover {
+  position: relative;
+   top: 60px;
+  /*Augmente la luminosité du bouton de 20% lorsqu'il est survolé.*/
+
+    &:hover {
+   filter: brightness(1.2); /* Éclaircir le bouton au survol */
+    }
+     
+    &:hover {
    background-color: $couleurSurvol;
    box-shadow: $ombreSurvol;
   }
@@ -219,9 +221,7 @@ margin-top: 0;
     padding-top: 16px;
   }
  @import "component/footer.scss";
- footer{
-  top: 1520px;
- }
+ 
 }
   //coniguration style palette du gout forfait Desktop
   @media all and (min-width: 1024px){
@@ -239,7 +239,8 @@ margin-top: 0;
      }
     
      .button-commander{
-      bottom: -110px;
+      position: relative;
+      bottom: -100px;
      }
 
      main{
@@ -257,8 +258,7 @@ margin-top: 0;
   color: #F6F6F6;
   height: 114px;
   width: 100%;
-  position: absolute;
-  top: 1560px;
+  
   .pasdepage{
     display: flex;
     flex-direction: row;
