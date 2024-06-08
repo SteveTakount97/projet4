@@ -20,6 +20,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-bottom: 5px;
 }
 .entree-s__description {
   margin: 0;
