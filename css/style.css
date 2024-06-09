@@ -82,6 +82,7 @@
 .button-menu {
   display: flex;
   justify-content: center;
+  padding-top: 60px;
 }
 
 .button {
@@ -447,6 +448,9 @@ ul a {
 h1 {
   font-size: 30px;
   width: 90%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .titre-two {
@@ -508,7 +512,6 @@ footer {
 }
 footer .pasdepage {
   color: white;
-  margin-top: 10px;
 }
 footer .bloc-footer {
   display: grid;
@@ -620,35 +623,31 @@ a {
     top: 15px;
     margin-left: 80%;
   }
-  /*animation image coeur*/
+  /* animation image coeur */
   .ft {
     background: black;
     color: transparent;
     background-clip: text;
-    transition: background-size 500ms ease, background-position 500ms ease; /* Ajoutez la transition pour background-position */
+    transition: background-size 2s ease, background-position 2s ease; /* Ajoutez la transition pour background-position */
     display: inline-block;
-    border: 2px solid transparent; /* Add border */
+    border: 2px solid transparent; /* Ajoutez une bordure */
     background-size: 100% 0%;
+    background-repeat: no-repeat;
+    background-position: bottom; /* Définit la position de départ en bas */
+    -webkit-background-clip: text; /* Support pour Safari */
   }
   .ft:hover {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    background-size: 100% 0%; /* Laissez cette valeur pour qu'elle reste visible après l'animation */
+    background-size: 100% 100%;
     background-clip: text;
     font-weight: 900;
     background-position: top;
-    background-repeat: no-repeat;
-    animation: animationheart 1s linear forwards; /* Ajoutez 'forwards' pour que l'animation garde l'état final */
+    transition: background-size 2s ease, background-position 2s ease; /* Transition pour l'effet de remplissage */
+    -webkit-background-clip: text; /* Support pour Safari */
   }
   .ft:not(:hover) {
-    background-position: bottom; /* Définit la position de départ en bas */
-  }
-  @keyframes animationheart {
-    0% {
-      background-size: 100% 0%;
-    }
-    100% {
-      background-size: 100% 100%;
-    }
+    background-position: bottom; /* Retourne à la position initiale en bas */
+    background-size: 100% 0%; /* Retourne à la taille initiale */
   }
   footer {
     background-color: #353535;

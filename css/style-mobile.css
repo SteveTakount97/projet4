@@ -4,12 +4,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 header {
   background-color: #FFFFFF;
   margin-left: 0;
@@ -52,19 +46,21 @@ html, body {
 hr {
   border: none;
   border-bottom: 3px solid #99E2D0;
-  width: 40px;
+  width: 50px;
   margin-left: 0;
-  margin-top: 0;
+  margin-top: 12px;
   margin-bottom: 0;
 }
 
 h1 {
+  font-family: Aclonica, sans-serif;
+  letter-spacing: -4px;
   font-size: 38px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 40.82px;
   text-align: left;
-  height: 27px;
+  text-shadow: 0px 0px 0px rgb(0, 0, 0);
   margin-left: 17px;
   padding-top: 25px;
   padding-bottom: 50px;
@@ -89,37 +85,34 @@ h1 {
   top: 50px;
 }
 
-.selecteur {
-  margin-top: 40px;
-  margin-bottom: 12px;
-  width: 275px;
-  height: 27px;
-  margin-left: 8px;
-}
-
-/*animation image coeur*/
+/* animation image coeur */
 .ft {
   background: black;
   color: transparent;
   background-clip: text;
   transition: background-size 500ms ease, background-position 500ms ease; /* Ajoutez la transition pour background-position */
   display: inline-block;
-  border: 2px solid transparent; /* Add border */
+  border: 2px solid transparent; /* Ajoutez une bordure */
   background-size: 100% 0%;
+  background-repeat: no-repeat;
+  background-position: bottom; /* Définit la position de départ en bas */
+  -webkit-background-clip: text; /* Support pour Safari */
 }
 .ft:hover {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-size: 100% 0%; /* Laissez cette valeur pour qu'elle reste visible après l'animation */
+  background-size: 100% 100%;
   background-clip: text;
   font-weight: 900;
   background-position: top;
-  background-repeat: no-repeat;
-  animation: animationheart 1s linear forwards; /* Ajoutez 'forwards' pour que l'animation garde l'état final */
+  transition: background-size 1s ease, background-position 1s ease; /* Transition pour l'effet de remplissage */
+  -webkit-background-clip: text; /* Support pour Safari */
 }
 .ft:not(:hover) {
-  background-position: bottom; /* Définit la position de départ en bas */
+  background-position: bottom; /* Retourne à la position initiale en bas */
+  background-size: 100% 0%; /* Retourne à la taille initiale */
 }
 
+/* Définir l'animation pour le remplissage progressif */
 @keyframes animationheart {
   0% {
     background-size: 100% 0%;
@@ -311,63 +304,61 @@ a {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 723px) {
-  ul {
-    list-style-type: none;
-  }
-  ul a {
-    color: #FFFFFF;
-  }
-  .image-foot {
-    width: 137, 58px;
-    height: 27px;
-    font-style: italic;
-    size: 18px;
-    line-height: 26, 24px;
-    filter: brightness(0) invert(1) hue-rotate(180deg);
-    margin-top: 2px;
-    padding-top: 16px;
-  }
-  /*Configuration footer*/
-  .image-foot {
-    width: 137, 58px;
-    height: 27px;
-    font-style: italic;
-    size: 18px;
-    line-height: 26, 24px;
-    filter: brightness(0) invert(1) hue-rotate(180deg);
-    margin-top: 2px;
-    padding-top: 16px;
-  }
-  footer {
-    margin-top: 50px;
-    width: 100%;
-    background-color: #353535;
-  }
-  footer .pasdepage {
-    color: white;
-    margin-top: 10px;
-  }
-  footer .bloc-footer {
-    display: grid;
-    gap: 10px;
-    margin-left: 20px;
-  }
-  .image-footer {
-    float: left;
-    margin-right: 10px;
-  }
-  dt {
-    margin-top: 5px;
-  }
-  a {
-    text-decoration: none;
-    color: initial;
-  }
-  .color-contact {
-    color: #FFFFFF;
-  }
+ul {
+  list-style-type: none;
 }
+ul a {
+  color: #FFFFFF;
+}
+
+.bloc-footer {
+  margin-bottom: 0;
+}
+
+/*Configuration footer*/
+.image-foot {
+  width: 137, 58px;
+  height: 27px;
+  font-style: italic;
+  size: 18px;
+  line-height: 26, 24px;
+  filter: brightness(0) invert(1) hue-rotate(180deg);
+  margin-top: 2px;
+  padding-top: 16px;
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #353535;
+}
+footer .pasdepage {
+  color: white;
+}
+footer .bloc-footer {
+  display: grid;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.image-footer {
+  float: left;
+  margin-right: 10px;
+}
+
+dt {
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.color-contact {
+  color: #FFFFFF;
+}
+
 @media all and (min-width: 1024px) {
   .menudujour {
     width: 70%;
@@ -388,7 +379,7 @@ a {
     text-align: center;
   }
   .image-like {
-    right: 25%;
+    right: 22%;
   }
   body {
     background-color: #FFFFFF;
@@ -404,6 +395,7 @@ a {
     color: #F6F6F6;
     height: 114px;
     width: 100%;
+    margin-top: 0;
   }
   footer .pasdepage {
     display: flex;
@@ -431,6 +423,8 @@ a {
     line-height: 26, 24px;
     filter: brightness(0) invert(1) hue-rotate(180deg);
     position: relative;
+    padding-top: 0;
+    margin-top: 0;
   }
   a {
     text-decoration: none;

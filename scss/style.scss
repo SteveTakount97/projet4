@@ -70,6 +70,9 @@ html, body{
 h1{
   font-size: 30px;
   width: 90%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .titre-two{
   @include text;
