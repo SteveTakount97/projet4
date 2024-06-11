@@ -1,27 +1,45 @@
 @charset "UTF-8";
 /* animation image coeur */
 .ft {
+  border: 2px solid transparent; /* Ajoutez une bordure */
+  background-clip: text !important;
   background: black;
   color: transparent;
-  background-clip: text;
-  transition: background-size 2s ease, background-position 2s ease; /* Ajoutez la transition pour background-position */
-  display: inline-block;
-  border: 2px solid transparent; /* Ajoutez une bordure */
   background-size: 100% 0%;
-  background-repeat: no-repeat;
-  background-position: bottom; /* Définit la position de départ en bas */
-  -webkit-background-clip: text; /* Support pour Safari */
+  font-weight: 400; /* Initial font-weight */
+  transition: font-weight 1s ease;
+  /* Initial state animation */
+  animation: fadeOut 1s forwards;
 }
+
 .ft:hover {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-size: 100% 100%;
-  background-clip: text;
-  font-weight: 900;
-  background-position: top;
-  transition: background-size 2s ease, background-position 2s ease; /* Transition pour l'effet de remplissage */
-  -webkit-background-clip: text; /* Support pour Safari */
+  /* Hover state animation */
+  animation: fadeIn 1s forwards; /* Applique l'animation 'fadeIn' sur 1 seconde et s'assure que les styles de l'animation sont appliqués après son exécution */
 }
-.ft:not(:hover) {
-  background-position: bottom; /* Retourne à la position initiale en bas */
-  background-size: 100% 0%; /* Retourne à la taille initiale */
+
+@keyframes fadeIn {
+  0% {
+    background: black;
+    background-size: 100% 0%; /* La taille du fond est de 100% en largeur et 0% en hauteur */
+    font-weight: 400;
+  }
+  100% {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-size: 100% 100%;
+    font-weight: 900;
+    background-clip: text;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-size: 100% 100%;
+    font-weight: 900;
+    background-clip: text;
+  }
+  100% {
+    background: black; /* À la fin de l'animation, le fond est noir */
+    background-size: 100% 0%;
+    font-weight: 400; /* Le poids de la police est 400 (normal) */
+  }
 }/*# sourceMappingURL=animationheart.css.map */

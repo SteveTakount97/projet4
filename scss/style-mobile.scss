@@ -77,7 +77,7 @@ margin-top: 0;
     margin-bottom: -50px !important;
    }
   .image-like{
-    
+    cursor: pointer;
     float: right;
     right: 30px;
     position: absolute;
@@ -101,7 +101,7 @@ margin-top: 0;
           animation: slideIn 0.9s ease-in-out forwards;
         
           &:nth-child(2) {
-            animation-delay: 1s; // Léger décalage pour le deuxième élément
+            animation-delay: 1s; // Léger décalage pour le deuxième élément nb: &:nth-child(2) est une pseudo-classe qui cible le deuxième enfant d'un élément parent,
           }
         
           &:nth-child(3) {
@@ -229,6 +229,7 @@ margin-top: 0;
     }
     h1{
       text-align: center;
+      cursor: pointer;
     }
     .image-like{
       right: 22%;
