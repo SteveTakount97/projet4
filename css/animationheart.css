@@ -21,7 +21,7 @@
   0% {
     background: black;
     background-size: 100% 0%; /* La taille du fond est de 100% en largeur et 0% en hauteur */
-    font-weight: 400;
+    font-weight: 200;
   }
   100% {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -40,6 +40,6 @@
   100% {
     background: black; /* À la fin de l'animation, le fond est noir */
     background-size: 100% 0%;
-    font-weight: 400; /* Le poids de la police est 400 (normal) */
+    font-weight: 200; /* Le poids de la police est 400 (normal) */
   }
 }/*# sourceMappingURL=animationheart.css.map */

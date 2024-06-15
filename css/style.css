@@ -82,7 +82,6 @@
 .button-menu {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
 }
 
 .button {
@@ -94,6 +93,10 @@
   cursor: pointer;
   transition: filter 0.3s ease; /* Transition douce pour l'effet de survol */
   transition: background-image 0.3s, box-shadow 0.3s;
+}
+
+.color-button {
+  color: #FFFFFF;
 }
 
 header {
@@ -135,7 +138,6 @@ ul a {
   border: none;
   background-color: #EAEAEA;
   padding-left: 15px;
-  font-family: "Roboto" sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #000000;
@@ -167,7 +169,6 @@ ul a {
   font-weight: 700;
   color: #000000;
   text-align: center;
-  width: 100%;
 }
 .container-menu .titre-two {
   height: 46px;
@@ -182,13 +183,15 @@ ul a {
 .container-menu .titre-tree {
   width: 218px;
   height: 40px;
-  size: 16px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
 }
 
 .button {
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  display: flex;
+  justify-content: center;
   /*Augmente la luminosité du bouton de 20% lorsqu'il est survolé.*/
 }
 .button:hover {
@@ -264,12 +267,11 @@ h3 {
 .image-menu {
   float: left;
   margin-left: 15px;
-  padding-top: 20px;
+  padding-top: 22px;
 }
 .image-menu .image-m {
   width: 13.02px;
   height: 19.9px;
-  opacity: 0px;
 }
 .image-menu .image-mi {
   width: 16px;
@@ -305,10 +307,11 @@ h3 {
   font-weight: 700;
   line-height: 21.09px;
   text-align: left;
+  margin: 0;
 }
 .sdiv-cadre aside {
   font-weight: 300;
-  size: 17px;
+  font-size: 17px;
   line-height: 19.9px;
   color: #000000;
   width: 247px;
@@ -335,6 +338,7 @@ div .image-like {
   float: right;
   right: 20px;
   position: relative;
+  bottom: 18px;
 }
 
 html {
@@ -393,7 +397,6 @@ ul a {
   border: none;
   background-color: #EAEAEA;
   padding-left: 15px;
-  font-family: "Roboto" sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #000000;
@@ -425,7 +428,6 @@ ul a {
   font-weight: 700;
   color: #000000;
   text-align: center;
-  width: 100%;
 }
 .container-menu .titre-two {
   height: 46px;
@@ -440,7 +442,7 @@ ul a {
 .container-menu .titre-tree {
   width: 218px;
   height: 40px;
-  size: 16px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
 }
@@ -448,19 +450,14 @@ ul a {
 h1 {
   font-size: 30px;
   width: 90%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .titre-two {
   text-align: center;
-  font-family: "roboto" sans-serif;
 }
 
 .titre-tree {
   text-align: center;
-  font-family: "roboto" sans-serif;
 }
 
 .image-Nouveau {
@@ -495,11 +492,11 @@ h1 {
 
 /*Configuration footer*/
 .image-foot {
-  width: 137, 58px;
+  width: 137.58px;
   height: 27px;
   font-style: italic;
-  size: 18px;
-  line-height: 26, 24px;
+  font-size: 18px;
+  line-height: 26.24px;
   filter: brightness(0) invert(1) hue-rotate(180deg);
   margin-top: 2px;
   padding-top: 16px;
@@ -584,7 +581,7 @@ a {
   .div-cadre {
     position: relative;
     padding-bottom: 10px;
-    width: 38%;
+    width: 38vw;
     background-color: #FFFFFF;
     border-radius: 20px;
   }
@@ -600,7 +597,6 @@ a {
     text-align: left;
   }
   .div-cadre aside {
-    font-family: "Roboto" sans-serif;
     font-size: 17px;
     font-weight: 300;
     line-height: 19.92px;
@@ -643,7 +639,7 @@ a {
     0% {
       background: black;
       background-size: 100% 0%; /* La taille du fond est de 100% en largeur et 0% en hauteur */
-      font-weight: 400;
+      font-weight: 200;
     }
     100% {
       background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -662,7 +658,7 @@ a {
     100% {
       background: black; /* À la fin de l'animation, le fond est noir */
       background-size: 100% 0%;
-      font-weight: 400; /* Le poids de la police est 400 (normal) */
+      font-weight: 200; /* Le poids de la police est 400 (normal) */
     }
   }
   footer {
@@ -694,16 +690,23 @@ a {
   footer .image-foot {
     height: 20px;
     font-style: italic;
-    size: 18px;
-    line-height: 26, 24px;
+    font-size: 18px;
+    line-height: 26.24px;
     filter: brightness(0) invert(1) hue-rotate(180deg);
     position: relative;
   }
   a {
     text-decoration: none;
-    color: initial;
+  }
+  .color-button {
+    color: #FFFFFF;
   }
   .color-contact {
     color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .div-cadre {
+    width: 547px;
   }
 }/*# sourceMappingURL=style.css.map */

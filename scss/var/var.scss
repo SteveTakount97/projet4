@@ -3,3 +3,7 @@ $couleurPrincipale: #9356dc;
 $couleurSurvol: lighten($couleurPrincipale, 10%); // Légèrement éclaircie
 $ombreSurvol: 0 0 10px rgba(0, 0, 0, 0.5); // Ombre portée plus visible
 $color-tertiary: #99e2d0;
+
+// Variables pour les breakpoints
+$min-desktop: 1024px;
+$max-desktop: 1440px;

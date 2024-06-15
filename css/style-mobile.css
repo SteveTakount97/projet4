@@ -38,7 +38,8 @@ html, body {
 }
 
 .contain-main {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
@@ -49,7 +50,7 @@ hr {
   width: 50px;
   margin-left: 0;
   margin-top: 12px;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
 
 h1 {
@@ -83,7 +84,7 @@ h1 {
   float: right;
   right: 30px;
   position: absolute;
-  top: 50px;
+  top: 30px;
 }
 
 /* animation image coeur */
@@ -108,7 +109,7 @@ h1 {
   0% {
     background: black;
     background-size: 100% 0%; /* La taille du fond est de 100% en largeur et 0% en hauteur */
-    font-weight: 400;
+    font-weight: 200;
   }
   100% {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -127,7 +128,7 @@ h1 {
   100% {
     background: black; /* À la fin de l'animation, le fond est noir */
     background-size: 100% 0%;
-    font-weight: 400; /* Le poids de la police est 400 (normal) */
+    font-weight: 200; /* Le poids de la police est 400 (normal) */
   }
 }
 /*animation clôche*/
@@ -199,7 +200,9 @@ h1 {
   color: #99e2d0;
 }
 
-/*fin animation*/
+/*fin animation ... Ce code SCSS stylise trois éléments imbriqués dans un composant parent, où chaque bloc a des propriétés spécifiques. 
+Les transitions et animations sont définies pour offrir des effets visuels lors du survol de l'élément parent, 
+comme la rotation d'une icône et le changement de marge pour ajuster sa position.*/
 /*animation contain*/
 .entree, .plats, .dessert {
   display: flex;
@@ -270,7 +273,6 @@ aside {
 .button-menu {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
 }
 
 .button {
@@ -282,6 +284,10 @@ aside {
   cursor: pointer;
   transition: filter 0.3s ease; /* Transition douce pour l'effet de survol */
   transition: background-image 0.3s, box-shadow 0.3s;
+}
+
+.color-button {
+  color: #FFFFFF;
 }
 
 .button-commander {
@@ -326,11 +332,11 @@ ul a {
 
 /*Configuration footer*/
 .image-foot {
-  width: 137, 58px;
+  width: 137.58px;
   height: 27px;
   font-style: italic;
-  size: 18px;
-  line-height: 26, 24px;
+  font-size: 18px;
+  line-height: 26.24px;
   filter: brightness(0) invert(1) hue-rotate(180deg);
   margin-top: 2px;
   padding-top: 16px;
@@ -382,14 +388,14 @@ a {
     width: 100%;
   }
   .button-menu {
-    padding-bottom: 25px;
+    padding: 40px;
   }
   h1 {
     text-align: center;
     cursor: pointer;
   }
   .image-like {
-    right: 22%;
+    right: 20%;
   }
   body {
     background-color: #FFFFFF;
@@ -429,8 +435,8 @@ a {
   footer .image-foot {
     height: 20px;
     font-style: italic;
-    size: 18px;
-    line-height: 26, 24px;
+    font-size: 18px;
+    line-height: 26.24px;
     filter: brightness(0) invert(1) hue-rotate(180deg);
     position: relative;
     padding-top: 0;

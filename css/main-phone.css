@@ -42,12 +42,11 @@
 .image-menu {
   float: left;
   margin-left: 15px;
-  padding-top: 20px;
+  padding-top: 22px;
 }
 .image-menu .image-m {
   width: 13.02px;
   height: 19.9px;
-  opacity: 0px;
 }
 .image-menu .image-mi {
   width: 16px;
@@ -83,10 +82,11 @@
   font-weight: 700;
   line-height: 21.09px;
   text-align: left;
+  margin: 0;
 }
 .sdiv-cadre aside {
   font-weight: 300;
-  size: 17px;
+  font-size: 17px;
   line-height: 19.9px;
   color: #000000;
   width: 247px;
@@ -113,4 +113,5 @@ div .image-like {
   float: right;
   right: 20px;
   position: relative;
+  bottom: 18px;
 }/*# sourceMappingURL=main-phone.css.map */

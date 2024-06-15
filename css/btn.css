@@ -1,7 +1,6 @@
 .button-menu {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
 }
 
 .button {
@@ -13,4 +12,8 @@
   cursor: pointer;
   transition: filter 0.3s ease; /* Transition douce pour l'effet de survol */
   transition: background-image 0.3s, box-shadow 0.3s;
+}
+
+.color-button {
+  color: #FFFFFF;
 }/*# sourceMappingURL=btn.css.map */

@@ -1,7 +1,7 @@
   
 /****** General ***********/
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 @import "utils/mixins.scss";
@@ -18,6 +18,8 @@
 
 .button{
 background-image: $button-color;
+display: flex;
+justify-content: center;
        
 &:hover {
  background-color: $couleurSurvol;
@@ -70,12 +72,11 @@ html, body{
 h1{
   font-size: 30px;
   width: 90%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  
 }
 .titre-two{
   @include text;
+ 
 }
 .titre-tree{
  @include text;
@@ -105,7 +106,7 @@ h1{
 
 @import "component/footer.scss";
 
-@media all and (min-width: 1024px){
+@media all and (min-width: 1024px) {
  
 .menu{
   flex-direction: row;
@@ -155,7 +156,7 @@ h1{
  .div-cadre{
   position: relative;
   padding-bottom: 10px;
-  width: 38%;
+  width: 38vw;
   background-color: #FFFFFF;
   border-radius: 20px;
   .sdiv-cadre{
@@ -170,7 +171,6 @@ h1{
     text-align: left;
    }
    aside{
-    font-family: "Roboto" sans-serif;
    font-size: 17px;
     font-weight: 300;
    line-height: 19.92px;
@@ -222,8 +222,8 @@ h1{
 .image-foot{
   height: 20px;
   font-style: italic;
-  size: 18px;
-  line-height: 26,24px;
+  font-size : 18px;
+  line-height: 26.24px;
   filter: brightness(0) invert(1) hue-rotate(180deg); 
   position: relative;
 
@@ -231,11 +231,18 @@ h1{
 }
 a{
 text-decoration: none;
-color: initial;
-
 }
+.color-button{
+  color: #FFFFFF;
+ }
+
 .color-contact{
 color: #FFFFFF;
 }
 
+}
+@media screen and (min-width: 1440px) {
+  .div-cadre{
+    width: 547px;
+  }
 }

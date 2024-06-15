@@ -38,7 +38,8 @@ object-fit: cover;
     overflow-x: hidden;
 }
 .contain-main{
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
@@ -48,7 +49,7 @@ hr{
   width: 50px;
   margin-left: 0;
  margin-top: 12px;
- margin-bottom: 0;
+ margin-bottom: 12px;
 
 }
 h1{
@@ -81,7 +82,7 @@ margin-top: 0;
     float: right;
     right: 30px;
     position: absolute;
-    top: 50px;
+    top: 30px;
   }
  
 
@@ -225,14 +226,14 @@ margin-top: 0;
      }
     }
     .button-menu{
-      padding-bottom: 25px;
+      padding: 40px;
     }
     h1{
       text-align: center;
       cursor: pointer;
     }
     .image-like{
-      right: 22%;
+      right: 20%;
     }
     
     body{
@@ -274,8 +275,8 @@ margin-top: 0;
 .image-foot{
   height: 20px;
   font-style: italic;
-  size: 18px;
-  line-height: 26,24px;
+  font-size: 18px;
+  line-height: 26.24px;
   filter: brightness(0) invert(1) hue-rotate(180deg); 
   position: relative;
   padding-top: 0;

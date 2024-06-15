@@ -7,11 +7,9 @@
 
 @mixin text{
     text-align: center;
-    font-family: "roboto" sans-serif;
 }
 
 @mixin note-image{
-   font-family: "Roboto" sans-serif;
    font-size: 18px;
    font-weight: 700;
    line-height: 21.09px;
