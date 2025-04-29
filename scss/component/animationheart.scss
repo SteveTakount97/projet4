@@ -1,12 +1,12 @@
 
 /* animation image coeur */
 .ft {
-  border: 2px solid transparent; /* Ajoutez une bordure */
+  border: 2px solid transparent; 
   background-clip: text !important;
   background: black;
   color: transparent;
   background-size: 100% 0%;
-  font-weight: 400; /* Initial font-weight */
+  font-weight: 400; 
   transition: font-weight 1s ease;
 
   /* Initial state animation */
@@ -15,13 +15,13 @@
 
 .ft:hover {
   /* Hover state animation */
-  animation: fadeIn 1s forwards; /* Applique l'animation 'fadeIn' sur 1 seconde et s'assure que les styles de l'animation sont appliqués après son exécution */
+  animation: fadeIn 1s forwards; 
 }
 
 @keyframes fadeIn {
   0% {
     background: black;
-    background-size: 100% 0%; /* La taille du fond est de 100% en largeur et 0% en hauteur */
+    background-size: 100% 0%; 
     font-weight: 200;
   }
   100% {
@@ -40,8 +40,8 @@
     background-clip: text;
   }
   100% {
-    background: black; /* À la fin de l'animation, le fond est noir */
+    background: black; 
     background-size: 100% 0%;
-    font-weight: 200; /* Le poids de la police est 400 (normal) */
+    font-weight: 200; 
   }
 }

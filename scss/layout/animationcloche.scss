@@ -53,19 +53,19 @@
     }
   
     &:hover &__confirmation {
-        margin-right: -1rem; // adjust position (in div) icon after rotate
+        margin-right: -1rem; 
     }
   
     &__wrapIcon {
-        height: 1.6rem; // adjust diam circle around icon
-        width: 1.6rem; // adjust diam circle around icon
+        height: 1.6rem; 
+        width: 1.6rem; 
         background-color: white;
         display: flex;
-        align-items: center; // align symbol fa-check in circle icon
+        align-items: center; 
         justify-content: center;
-        border-radius: 100px; // adjust border around circle
-        transform: rotate(180deg); // prepare for the future rotation
-        transition-duration: 0.5s; // time to rotate
+        border-radius: 100px; 
+        transform: rotate(180deg); 
+        transition-duration: 0.5s;
     }
   
     &:hover &__wrapIcon {
@@ -76,7 +76,4 @@
     }
   }
     
-   /*fin animation ... Ce code SCSS stylise trois éléments imbriqués dans un composant parent, où chaque bloc a des propriétés spécifiques. 
-   Les transitions et animations sont définies pour offrir des effets visuels lors du survol de l'élément parent, 
-   comme la rotation d'une icône et le changement de marge pour ajuster sa position.*/
-  
+   
